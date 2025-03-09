@@ -1,0 +1,975 @@
+/* 
+  Estilo principal para o site de currículo digital
+  Autor: [Seu Nome]
+  Data: 2023
+*/
+
+/* Reset e Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --text-color: #333;
+    --border-radius: 5px;
+    --box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+section {
+    padding: 80px 0;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-small {
+    padding: 6px 12px;
+    font-size: 0.9em;
+    border-radius: var(--border-radius);
+    background-color: var(--secondary-color);
+    color: white;
+    display: inline-block;
+    transition: var(--transition);
+}
+
+.btn-small:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 7px 15px;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: var(--secondary-color);
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* Hero/Cabeçalho */
+.hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.7)), url('../assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.hero .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: var(--light-color);
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid var(--secondary-color);
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    color: var(--secondary-color);
+}
+
+/* Cabeçalho das Páginas Internas */
+.page-header {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.7)), url('../assets/images/page-header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+.competencias .page-header {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.7)), url('../assets/images/competencias-bg.jpg');
+   
+}
+.contacto .page-header {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.7)), url('../assets/images/contacto-bg.jpg');
+   
+}
+.experiencias .page-header {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.7)), url('../assets/images/experiencias-bg.jpg');
+   
+}
+.formacao .page-header {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.7)), url('../assets/images/formacao-bg.jpg');
+   
+}
+.page-header h1 {
+    color: white;
+    font-size: 2.2rem;
+}
+
+.page-header p {
+    color: var(--light-color);
+    font-size: 1.1rem;
+}
+
+/* Seção Sobre */
+.about {
+    background-color: white;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-video {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-video video {
+    width: 100%;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+/* Cards de Destaque */
+.highlights .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 25px;
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card i {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+/* Habilidades */
+.skills {
+    background-color: white;
+}
+
+.skill-category {
+    margin-bottom: 40px;
+}
+
+.skill-bars {
+    margin-top: 20px;
+}
+.skill-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.skill-item span {
+    width: 100px;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin: 0 15px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.skill-box {
+    background-color: #f5f5f5;
+    border-radius: var(--border-radius);
+    padding: 15px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.skill-box:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.skill-box i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Habilidades Interpessoais */
+.soft-skills {
+    background-color: #f5f5f5;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.soft-skill {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 25px;
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.soft-skill:hover {
+    transform: translateY(-5px);
+}
+
+.soft-skill i {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+/* Idiomas */
+.languages {
+    background-color: white;
+}
+
+.language-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.language-item {
+    background-color: #f5f5f5;
+    border-radius: var(--border-radius);
+    padding: 20px;
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.language-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Timeline para Formação e Experiência */
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: var(--secondary-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    background-color: white;
+    border: 4px solid var(--secondary-color);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-item:nth-child(even) .timeline-dot {
+    left: -10px;
+}
+
+.timeline-date {
+    position: absolute;
+    width: max-content;
+    padding: 7px 12px;
+    background-color: var(--secondary-color);
+    color: white;
+    top: 0;
+    border-radius: var(--border-radius);
+    right: -150px;
+}
+
+.timeline-item:nth-child(even) .timeline-date {
+    left: -150px;
+    right: auto;
+}
+
+.timeline-content {
+    padding: 20px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+/* Certificações */
+.certifications {
+    background-color: #f5f5f5;
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.cert-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.cert-logo {
+    width: 100px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cert-logo img {
+    width: 100%;
+}
+
+.cert-info {
+    padding: 15px;
+    flex: 1;
+}
+
+.cert-info h3 {
+    margin-bottom: 5px;
+}
+
+.cert-info p {
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Cursos */
+.courses {
+    background-color: white;
+}
+
+.courses-list {
+    margin-top: 30px;
+}
+
+.course-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #f5f5f5;
+    margin-bottom: 15px;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.course-item:hover {
+    background-color: #e0e0e0;
+}
+
+.course-item i {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-right: 15px;
+}
+
+.course-info h3 {
+    margin-bottom: 5px;
+}
+
+.course-info p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Estilos para a página de experiências */
+.professional {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+    font-size: 2rem;
+    position: relative;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+.experience-timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.experience-timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    width: 3px;
+    background-color: var(--secondary-color);
+}
+
+.experience-item {
+    display: flex;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.exp-date {
+    min-width: 80px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.exp-date span {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.exp-content {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    margin-left: 20px;
+    box-shadow: var(--box-shadow);
+    flex: 1;
+}
+
+.exp-content h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.exp-content h4 {
+    color: var(--secondary-color);
+    margin-top: 5px;
+    font-weight: normal;
+}
+
+.responsibilities {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.responsibilities li {
+    margin-bottom: 5px;
+}
+
+/* Projetos */
+.projects {
+    background-color: #f5f5f5;
+    padding: 80px 0;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-img {
+    height: 200px;
+    overflow: hidden;
+}
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-img img {
+    transform: scale(1.1);
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.project-tech {
+    margin: 15px 0;
+}
+
+.project-tech span {
+    display: inline-block;
+    background-color: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    margin-right: 8px;
+    margin-bottom: 5px;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.btn-small {
+    padding: 8px 16px;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+
+/* Contacto */
+.contact-info {
+    background-color: white;
+    padding-bottom: 40px;
+}
+
+.contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.contact-card {
+    background-color: #f5f5f5;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 25px;
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.contact-card:hover h3 {
+    color: white;
+}
+
+.contact-card i {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.contact-card:hover i {
+    color: white;
+}
+
+/* Formulário */
+.contact-form {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+}
+
+.contact-form form {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.error-message {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    margin-top: 5px;
+    display: none;
+}
+
+/* Mapa */
+.map {
+    padding-top: 40px;
+    padding-bottom: 80px;
+    background-color: #f5f5f5;
+}
+
+.map iframe {
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-top: 20px;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+/* Atividades Extracurriculares */
+.extracurricular {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+}
+
+.activities-list {
+    margin-top: 30px;
+}
+
+.activity-item {
+    display: flex;
+    align-items: flex-start;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: var(--transition);
+}
+
+.activity-item:hover {
+    transform: translateY(-5px);
+}
+
+.activity-item i {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.activity-info h3 {
+    margin-bottom: 5px;
+}
+
+.activity-date {
+    color: #666;
+    font-style: italic;
+    margin-top: 10px;
+}
+/* Habilidades Analíticas */
+.analytical-skills {
+    background-color: #f5f5f5;
+    padding: 80px 0;
+}
+
+.analytical-skills .skill-category {
+    margin-bottom: 40px;
+}
+
+.analytical-skills .skill-grid {
+    display: grid;
+    /* Mudando para 3 colunas fixas em vez de auto-fill */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Para telas menores */
+@media screen and (max-width: 768px) {
+    .analytical-skills .skill-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .analytical-skills .skill-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.analytical-skills .skill-box {
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 20px 15px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    /* Garantindo que todos os boxes tenham a mesma altura */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.analytical-skills .skill-box:hover {
+    transform: translateY(-5px);
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.analytical-skills .skill-box i {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+.analytical-skills .skill-box:hover i {
+    color: white;
+}
+
+.analytical-skills .skill-box span {
+    /* Garantir que o texto fique em uma linha ou quebre de forma adequada */
+    width: 100%;
+    text-align: center;
+}

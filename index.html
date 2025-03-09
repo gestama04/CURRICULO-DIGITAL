@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículos Digitais</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #34495e;
+            --text-color: #333;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Header */
+        .main-header {
+            position: relative;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            overflow: hidden; /* Previne que o vídeo ultrapasse os limites */
+        }
+
+        /* Camada de sobreposição para o gradiente */
+        .main-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(44, 62, 80, 0.627), rgba(44, 62, 80, 0.7));
+            z-index: 1;
+        }
+
+        /* Estilo para o conteúdo ficar acima do vídeo */
+        .main-header .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Estilo para o vídeo de fundo */
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Faz o vídeo cobrir todo o contêiner */
+            z-index: 0;
+        }
+
+        .main-header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+        }
+
+        .main-header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Profiles Section */
+        .profiles-section {
+            padding: 80px 0;
+            background-color: #f5f5f5;
+        }
+
+        .profiles-section h2 {
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--primary-color);
+            font-size: 2rem;
+            position: relative;
+        }
+
+        .profiles-section h2:after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--secondary-color);
+        }
+
+        .profiles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .profile-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+
+        .profile-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .profile-image {
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .profile-card:hover .profile-image img {
+            transform: scale(1.1);
+        }
+
+        .profile-color-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.2;
+            transition: var(--transition);
+        }
+
+        .profile-card:nth-child(1) .profile-color-overlay {
+            background-color: var(--secondary-color);
+        }
+
+        .profile-card:nth-child(2) .profile-color-overlay {
+            background-color: var(--accent-color);
+        }
+
+        .profile-card:nth-child(3) .profile-color-overlay {
+            background-color: #27ae60;  /* Verde para o terceiro card */
+        }
+
+        .profile-card:hover .profile-color-overlay {
+            opacity: 0.5;
+        }
+
+        .profile-info {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .profile-info h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+            font-size: 1.6rem;
+        }
+
+        .profile-info p {
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .profile-info .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background-color: var(--secondary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: var(--transition);
+        }
+
+        .profile-info .btn:hover {
+            background-color: var(--primary-color);
+            transform: scale(1.05);
+        }
+
+        .profile-card:nth-child(1) .profile-info .btn {
+            background-color: var(--secondary-color);
+        }
+
+        .profile-card:nth-child(2) .profile-info .btn {
+            background-color: var(--accent-color);
+        }
+
+        .profile-card:nth-child(3) .profile-info .btn {
+            background-color: #27ae60;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            .main-header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .main-header p {
+                font-size: 1rem;
+            }
+            
+            .profiles-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <video autoplay muted loop class="video-background">
+            <source src="assets\videos\fundo.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+        </video>
+        <div class="container">
+            <h1>Currículos Digitais - ESTGL</h1>
+            <p>Bem-vindo à nossa plataforma de currículos digitais. Conheça o perfil profissional dos alunos de Engenharia Informática e Telecomunicações.</p>
+        </div>
+    </header>
+
+    <!-- Profiles Section -->
+    <section class="profiles-section">
+        <div class="container">
+            <h2>Escolha um Currículo</h2>
+            
+            <div class="profiles-grid">
+                
+                <!-- Bernardo -->
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="assets/images/bernardo-profile.jpg" alt="Bernardo">
+                        <div class="profile-color-overlay"></div>
+                    </div>
+                    <div class="profile-info">
+                        <h3>Bernardo</h3>
+                        <p>Engenharia Informática e Telecomunicações</p>
+                        <a href="bernardo/index.html" class="btn">Ver Currículo</a>
+                    </div>
+                </div>
+                
+                <!-- David -->
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="assets/images/david-profile.jpg" alt="David">
+                        <div class="profile-color-overlay"></div>
+                    </div>
+                    <div class="profile-info">
+                        <h3>David</h3>
+                        <p>Engenharia Informática e Telecomunicações</p>
+                        <a href="david/indexd.html" class="btn">Ver Currículo</a>
+                    </div>
+                </div>
+                
+                 <!-- Francisco -->
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="assets/images/francisco-profile.jpg" alt="Francisco">
+                        <div class="profile-color-overlay"></div>
+                    </div>
+                    <div class="profile-info">
+                        <h3>Francisco</h3>
+                        <p>Engenharia Informática e Telecomunicações</p>
+                        <a href="francisco/index.html" class="btn">Ver Currículo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 ESTGL - Escola Superior de Tecnologia e Gestão de Lamego. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

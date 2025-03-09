@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title>
+    <link rel="stylesheet" href="complementos\david.css">
+    <link rel="stylesheet" href="complementos\header.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
+</head>
+<body id="top">
+    <header>
+        <a href="../index.html"><button>Home</button></a>
+    </header>
+
+    
+    
+    
+
+    <div class="container">
+        <div class="curriculum-container">
+            <div class="image-container">
+                <img src="complementos\David.png" alt="Imagem do currículo">
+            </div>
+            <div class="title-container">
+                <h1>Currículo</h1>
+            </div>
+        </div> <br><br>
+
+        <nav>
+            <a href="#educacao"><button>Educação</button></a>
+            <a href="#experiencia"><button>Experiência</button></a>
+            <a href="#competencias"><button>Competências</button></a>
+            <a href="#idiomas"><button>Idiomas</button></a>
+            
+        </nav>
+        
+        <div class="curriculum-topics">
+            <fieldset>
+                
+                
+                <fieldset>
+                                       
+                    Nome <input type="text" name="nome" value="David Emanuel Moreira Teixeira" readonly> <br><br>
+                    
+                    Data de Nascimento <input type="text" name="data_nascimento" value="24/08/2004" readonly> <br><br>
+
+                    País <input type="pais" name="pais" value="Portugal" readonly> <br><br>
+                        
+                    Cidade <input type="text" name="cidade" value="Lamego" readonly> <br><br>
+
+                    Morada de Residência <input type="text" name="morada" value="Rua ***************" readonly> <br><br>
+                    
+                    Código Postal <input type="text" name="codigo" value="5100-***" readonly> <br><br>
+                    
+                    
+                    Telefone<input type="tel" name="telefone" value="+351 925489330" pattern="[0-9]{9}" readonly>
+                    
+
+                    Email <input type="email" name="email" value="pv26034@estgl.ipv.pt" readonly> <br><br>
+
+                    Nacionalidade <input type="text" name="nacionalidade" value="Português" readonly> <br><br>
+                        
+                                                    
+                    Gênero<input type="text" name="codigo" value="Masculino" readonly> <br><br>
+                    
+                    <br>
+                    Informaçao Adicional <br><br>
+                    <h4 style="text-align: justify;">
+                        Sou o David Teixeira, tenho 20 anos e sou estudante de Engenharia Informática e Telecomunicações. Sou uma pessoa proativa, com grande interesse por tecnologia e inovação, sempre em busca de novos desafios para desenvolver as minhas competências.
+                    
+                        Tenho facilidade em trabalhar em equipa, boa capacidade de adaptação e gosto de aprender continuamente. Procuro oportunidades que me permitam aplicar os meus conhecimentos académicos em contextos reais e contribuir com soluções criativas e eficientes.
+                    
+                        Estou disponível para integrar projetos onde possa crescer profissionalmente e acrescentar valor com as minhas capacidades técnicas e interpessoais.
+                    </h4>
+
+                        
+                    </fieldset>
+                </details>
+                <details id="educacao">
+                    <summary>Educação</summary>
+                    <fieldset>
+                        <a href="https://estgl.ipv.pt" target="_blank"><img src="complementos\Estgl.png" alt="Estgl" width="100px" height="auto"></a> <br><br>
+                        Instituição <input type="text" name="instituicao" value="Escola Secundária de Tecnologia e Gestão de Lamego" readonly> <br><br>
+                        Nível de Escolaridade <input type="text" name="nivel_escolaridade" value="12º Ano" readonly> <br><br>
+                        Curso <input type="text" name="curso" value="Engenharia Informática e Telecomunicações" readonly> <br><br>
+                        Cidade <input type="text" name="cidadeE" value="Lamego" readonly> <br><br>
+                        Data de início <input type="text" name="data_inicioE" value="2022" readonly> <br><br>
+                        Data de Comclusão <input type="text" name="data_fimE" value="Ainda a decorrer" readonly> <br><br>
+                    </fieldset>
+                </details>
+                <details id="experiencia">
+                    <summary>Experiência</summary>
+                    <fieldset>
+                        <h4 style="text-align: justify;">
+                            Neste momento (03/2025) sou estagiario no corpo de Bombeiros Voluntários de Lamego, onde estou a tirar os cursos nessesários para entrar no quadro ativo (Incendios urbanos/rurais, TAT, TD e Instrução geral), trabalhei como repositor na cadeia do Continente e neste momento realizo o 3º ano da Licenciatura de Engenharia Informática e Telecomunicações onde já realizei pequenos projetos de gestão de redes, programação em phyton, c, c++ e java.
+                        </h4>
+                
+                        <div class="projects-gallery">
+                            <div class="project-item">
+                                <img src="complementos\Arduino.png" alt="Projeto 1">
+                                
+                            </div>
+                            <div class="project-item">
+                                <img src="complementos\SpaceI.png" alt="Projeto 2">
+                                
+                            </div>
+                            <div class="project-item">
+                                <img src="complementos\4emlinha.png" alt="Projeto 3">
+                                
+                            </div>
+                        </div>
+                
+                        <div class="download-section">
+                            <a href="complementos/projetos.zip" download class="download-button">
+                                <i class="bi bi-file-earmark-zip"></i>
+                                Download Projetos
+                            </a>
+                        </div>
+                    </fieldset>
+                </details>
+                
+
+                <details id="competencias">
+
+                    <summary>Comptencias</summary>
+                    <fieldset>
+                        <h4 style="text-align: justify;">
+                            Tenho noções de programação em Python, C++, Java, HTML, CSS, além de conhecimentos básicos em redes de computadores e redes de comunicações. Possuo também familiaridade com a administração de sistemas operativos Linux e Windows, e noções de segurança informática, como criptografia e proteção de dados. Estou sempre em busca de melhorar os meus conhecimentos em tecnologias emergentes, como inteligência artificial e internet das coisas (IoT).
+                        </h4>
+                    </fieldset>
+                </details>
+                <details id="idiomas">
+                    <summary>Idiomas</summary>
+                <fieldset>
+                    <h4>
+                        Português Nativo<br>
+                        Inglês B3<br>
+                        Espanhol B3<br>
+                    </h4>
+                </details>
+
+                
+                    
+                </fieldset>
+
+                
+            </fieldset>
+        </div>
+    
+    </div>
+    
+    
+    <footer class="footer">
+        <div class="footer-buttons">
+            <a href="https://www.instagram.com/davidemteixeira/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100009382101718&locale=pt_PT" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.tiktok.com/@incognito_sec?is_from_webapp=1&sender_device=pc" target="_blank"><i class="bi bi-tiktok"></i></a>
+            <a href="https://github.com/PV26034" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="#" class="copy-button" onclick="copyToClipboard('+351 925489330')">
+                <i class="bi bi-telephone"></i>
+            </a>
+            <a href="#" class="copy-button" onclick="copyToClipboard('pv26034@estgl.ipv.pt')">
+                <i class="bi bi-envelope"></i>
+            </a>
+        </div>
+    </footer>
+    
+    
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert("Copiado para a área de transferência: " + text);
+            }).catch(err => {
+                console.error("Erro ao copiar: ", err);
+            });
+        }
+    </script>
+    
+    
+</body>
+</html>

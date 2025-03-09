@@ -1,0 +1,276 @@
+/* Impede que a página deslize para os lados */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+    height: 100%;
+    max-height: 100vw;
+    scroll-behavior: smooth; /* Rolagem suave */
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fundo com gradiente */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #1e1e1e, #444);
+    color: white;
+}
+
+/* Barra de navegação */
+nav {
+    width: 100%;
+    background: linear-gradient(135deg, #ff6b6b00, #ff000000);
+    padding: 0px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+    z-index: 1000;
+}
+
+nav a button {
+    background-color: rgb(94, 94, 94);
+    color: #000000;
+    font-weight: bold;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+/* Container principal */
+.container {
+    width: 100%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 80px auto 20px auto;
+    backdrop-filter: blur(10px);
+}
+
+/* Layout da secção do currículo */
+.curriculum-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Imagem */
+.image-container img {
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(96, 96, 96, 0.5);
+    width: 150px;
+    height: auto;
+}
+
+/* Título do currículo */
+.title-container h1 {
+    text-align: center;
+    color: white;
+}
+
+/* Secção dos tópicos */
+.curriculum-topics {
+    text-align: left;
+    width: 100%;
+}
+
+fieldset {
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+}
+
+/* Labels e inputs */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    height: 35px;
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Ajuste para textarea */
+textarea {
+    resize: none;
+    height: 80px;
+}   
+
+/* Ajuste do telefone */
+.phone-input-container {
+    display: flex;
+    gap: 5px;
+}
+
+/* Estilo dos botões */
+button {
+    background-color: #ff0000;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #cc0000;
+}
+
+/* Grupo de opções de sexo */
+.radio-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.radio-group label {
+    font-size: 14px;
+}
+
+.radio-group input[type="radio"] {
+    transform: scale(0.8);
+    margin-right: 5px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profileImage {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+#uploadImage {
+    margin-top: 10px;
+}
+.download-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.download-button { 
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #444;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.download-button:hover {
+    background: #666;
+}
+
+.download-button i {
+    font-size: 20px;
+}
+.projects-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.project-item {
+    text-align: center;
+}
+
+.project-item img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.project-item p {
+    font-size: 14px;
+    margin: 0;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+/* Criar um único container para os botões e alinhar corretamente */
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Espaçamento entre os botões */
+    flex-wrap: wrap; /* Garante que não quebrem em telas menores */
+}
+
+/* Estiliza todos os ícones uniformemente */
+.footer-buttons a {
+    color: white;
+    font-size: 2rem;
+    transition: transform 0.3s ease-in-out;
+    background: none;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* Efeito hover para todos os botões */
+.footer-buttons a:hover {
+    transform: scale(1.2);
+    color: #ffcc00;
+}
+
+/* Ajuste para botões de cópia (telefone e email) */
+.copy-button {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+.copy-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
