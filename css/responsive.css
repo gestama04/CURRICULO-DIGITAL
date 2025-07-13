@@ -1,0 +1,277 @@
+/* Estilos responsivos para diferentes tamanhos de tela */
+
+/* Tablets e dispositivos menores */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    /* Ajustes para o cabeçalho */
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    /* Ajustes para a seção sobre */
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .about-text {
+        width: 100%;
+        padding-right: 0;
+    }
+    
+    /* Ajustes para os cards */
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    /* Ajustes para certificações e projetos */
+    .cert-grid, .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Ajustes para a timeline vertical */
+    .vertical-timeline::before {
+        left: 31px;
+    }
+    
+    .timeline-block {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    
+    .timeline-icon {
+        left: 11px;
+    }
+    
+    .timeline-content {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 768px) {
+    /* Ajustes para o cabeçalho */
+    .hero-content {
+        padding: 40px 20px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    /* Ajustes para habilidades */
+    .skill-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    /* Ajustes para habilidades interpessoais */
+    .soft-skill {
+        min-width: 100%;
+    }
+    
+    /* Ajustes para idiomas */
+    .language-item {
+        min-width: 100%;
+    }
+    
+    /* Ajustes para contato */
+    .contact-card {
+        min-width: 100%;
+    }
+    
+    /* Ajustes para o formulário */
+    .form-container {
+        padding: 20px;
+    }
+    
+    /* Ajustes para a barra de progresso de leitura */
+    .reading-progress-container {
+        height: 3px;
+    }
+    
+    /* Ajustes para os ícones sociais */
+    .social-icon {
+        width: 45px;
+        height: 45px;
+    }
+    
+    /* Ajustes para o botão voltar ao topo */
+    .back-to-top {
+        width: 35px;
+        height: 35px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+/* Dispositivos muito pequenos */
+@media (max-width: 480px) {
+    /* Ajustes para o cabeçalho */
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    /* Ajustes para habilidades */
+    .skill-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    
+    /* Ajustes para a timeline */
+    .timeline-content {
+        padding: 15px;
+    }
+    
+    /* Ajustes para certificações */
+    .cert-card {
+        flex-direction: column;
+    }
+    
+    .cert-logo {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    /* Ajustes para o mapa */
+    .map-container, .ratio-4x3 {
+        height: 250px;
+    }
+    
+    /* Ajustes para os cards de contato */
+    .icon-circle {
+        width: 50px;
+        height: 50px;
+    }
+    
+    /* Ajustes para o formulário */
+    .form-control {
+        padding: 8px;
+    }
+    
+    .btn-lg {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+    
+    /* Ajustes para os ícones sociais */
+    .social-icons {
+        gap: 10px;
+    }
+    
+    .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    /* Ajustes para o botão voltar ao topo */
+    .back-to-top {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Orientação paisagem em dispositivos móveis */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero-content {
+        padding: 20px;
+    }
+    
+    .profile-image {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.5rem;
+        margin: 10px 0;
+    }
+    
+    .subtitle {
+        font-size: 0.9rem;
+    }
+    
+    /* Ajustes para o mapa em paisagem */
+    .map-container, .ratio-4x3 {
+        height: 180px;
+    }
+    
+    /* Ajustes para o formulário em paisagem */
+    .form-container {
+        padding: 10px;
+    }
+    
+    .form-control {
+        padding: 6px;
+    }
+}
+
+/* Telas muito grandes */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1300px;
+    }
+    
+    .hero-content {
+        padding: 100px 0;
+    }
+    
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+    
+    .subtitle {
+        font-size: 1.5rem;
+    }
+    
+    .skill-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    
+    .cert-grid, .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+    
+    /* Melhorias para telas grandes */
+    .timeline::before {
+        left: 50%;
+    }
+    
+    .timeline-item .timeline-content {
+        width: 45%;
+    }
+    
+    /* Ajustes para o mapa em telas grandes */
+    .map-container, .ratio-4x3 {
+        height: 450px;
+    }
+    
+    /* Ajustes para os cards em telas grandes */
+    .card:hover {
+        transform: translateY(-15px);
+    }
+}

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Currículo Digital</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Adicione este código logo após a tag <body> em cada página -->
+<div class="reading-progress-container">
+    <div class="reading-progress-bar" id="readingProgressBar"></div>
+  </div>
+  
+    <!-- Navbar Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Currículo Digital</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item ms-lg-3">
+                        <button id="darkModeToggle" class="btn btn-outline-light btn-sm rounded-circle">
+                          <i class="fas fa-moon"></i>
+                        </button>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="competencias.html">Competências</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formacao.html">Formação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experiencias.html">Experiência</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <!-- Cabeçalho da Página com Banner Paralax -->
+    <header class="py-5 text-white position-relative">
+        <div class="contact-bg"></div>
+        <div class="container position-relative z-index-1 text-center">
+            <div class="py-4 px-3 rounded bg-dark bg-opacity-75">
+                <h1 class="display-4 fw-bold">Entre em Contacto</h1>
+                <p class="lead mb-0">Estou disponível para novas oportunidades e colaborações</p>
+                <div class="mt-3">
+                    <i class="fas fa-envelope fa-2x mx-2"></i>
+                    <i class="fas fa-phone fa-2x mx-2"></i>
+                    <i class="fas fa-map-marker-alt fa-2x mx-2"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Informações de Contato com Cards -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center g-4">
+                <!-- Card Email -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm text-center contact-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-body p-4">
+                            <div class="icon-circle bg-primary text-white mx-auto mb-4">
+                                <i class="fas fa-envelope fa-2x"></i>
+                            </div>
+                            <h3 class="card-title h4 mb-3">Email</h3>
+                            <p class="card-text mb-3">Envie-me um email para discutir projetos ou oportunidades</p>
+                            <a href="mailto:pv26632@estgl.ipv.pt" class="btn btn-outline-primary">
+                                pv26632@estgl.ipv.pt
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card Telefone -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm text-center contact-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-body p-4">
+                            <div class="icon-circle bg-success text-white mx-auto mb-4">
+                                <i class="fas fa-phone fa-2x"></i>
+                            </div>
+                            <h3 class="card-title h4 mb-3">Telefone</h3>
+                            <p class="card-text mb-3">Disponível para chamadas em horário comercial</p>
+                            <a href="tel:+351968515377" class="btn btn-outline-success">
+                                (+351) 968 515 377
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card Localização -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm text-center contact-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-body p-4">
+                            <div class="icon-circle bg-info text-white mx-auto mb-4">
+                                <i class="fas fa-map-marker-alt fa-2x"></i>
+                            </div>
+                            <h3 class="card-title h4 mb-3">Localização</h3>
+                            <p class="card-text mb-3">Baseado em Lamego, disponível para trabalho remoto</p>
+                            <a href="https://www.google.com/maps?ll=41.096689,-7.808202&z=19&t=m&hl=pt-PT&gl=PT&mapclient=embed&cid=1921900380750552300" target="_blank" class="btn btn-outline-info">
+                                Lamego, Portugal
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Formulário de Contato -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="display-6 fw-bold mb-4">Envie uma Mensagem</h2>
+                    <p class="lead form-description mb-4">Preencha o formulário abaixo e entrarei em contato o mais breve possível.</p>
+                    
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="name" required>
+                                <div class="invalid-feedback">
+                                    Por favor, informe seu nome.
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                                <div class="invalid-feedback">
+                                    Por favor, informe um email válido.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="subject" class="form-label">Assunto</label>
+                                <input type="text" class="form-control" id="subject" required>
+                                <div class="invalid-feedback">
+                                    Por favor, informe o assunto.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Mensagem</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                                <div class="invalid-feedback">
+                                    Por favor, escreva sua mensagem.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-paper-plane me-2"></i>Enviar Mensagem
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-0">
+                            <div class="ratio ratio-4x3">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d595.0529139127501!2d-7.808103!3d41.096629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24ac9fdfadf77b%3A0x1aabf636b0531cec!2sESTGL-Escola%20Superior%20de%20Tecnologia%20e%20Gest%C3%A3o%20de%20Lamego!5e0!3m2!1spt-PT!2spt!4v1673456789012!5m2!1spt-PT!2spt" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Redes Sociais -->
+    <section class="py-5 bg-dark text-white text-center">
+        <div class="container">
+            <h2 class="h3 mb-4">Conecte-se Comigo</h2>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/bernardo-silva-031a51339/" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://github.com/gestama04" target="_blank" class="social-icon">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="mailto:pv26632@estgl.ipv.pt" class="social-icon">
+                    <i class="fas fa-envelope fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Bernardo Silva. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS - Animate On Scroll Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    
+    <script>
+        // Inicializar AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+        
+        // Validação do formulário
+        (function() {
+            'use strict';
+            
+            // Fetch all forms to apply validation
+            var forms = document.querySelectorAll('.needs-validation');
+            
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms).forEach(function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    } else {
+                        event.preventDefault();
+                        // Aqui você adicionaria o código para enviar o formulário via AJAX
+                        // Por enquanto, apenas mostramos um alerta
+                        alert('Mensagem enviada com sucesso! Obrigado pelo contato.');
+                        form.reset();
+                    }
+                    
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+    </script>
+    
+    <style>
+        /* Estilo para o efeito parallax no cabeçalho */
+        header {
+            height: 400px;
+            overflow: hidden;
+        }
+        
+        .contact-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('assets/images/contact-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            filter: brightness(0.7);
+        }
+        
+        .z-index-1 {
+            z-index: 1;
+        }
+        
+        /* Estilo para os cards de contato */
+        .contact-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+        }
+        
+        .icon-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        .contact-card:hover .icon-circle {
+            transform: scale(1.1);
+        }
+        
+        /* Estilo para as redes sociais */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            background-color: white;
+            color: #212529;
+            transform: translateY(-5px);
+        }
+        
+        /* Estilo para o formulário */
+        .form-control {
+            padding: 12px;
+            border: 1px solid #ced4da;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .form-control:focus {
+            border-color: #0d6efd;
+            box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+        }
+        
+        .btn-primary {
+            padding: 12px 24px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+        }
+        
+        /* Animação para o mapa */
+        .card iframe {
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover iframe {
+            opacity: 0.9;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header {
+                height: 300px;
+            }
+            
+            .icon-circle {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .social-icon {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    </style>
+    <script>
+        // Modo escuro para a página de contacto
+document.addEventListener('DOMContentLoaded', function() {
+  const darkModeToggle = document.getElementById('darkModeToggle');
+  if (darkModeToggle) {
+    // Verificar preferência salva
+    const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+    
+    // Função para aplicar o modo escuro
+    function applyDarkMode() {
+      document.body.classList.add('dark-mode');
+      document.body.style.backgroundColor = '#121212';
+      document.body.style.color = '#e0e0e0';
+      
+      // Ajustar seções com fundo claro
+      document.querySelectorAll('.bg-light').forEach(section => {
+        section.classList.remove('bg-light');
+        section.classList.add('bg-dark-subtle');
+        section.style.backgroundColor = '#1a1a1a !important';
+      });
+      
+      // Ajustar cards de contato
+      document.querySelectorAll('.contact-card').forEach(card => {
+        card.style.backgroundColor = '#1e1e1e';
+        card.style.color = '#e0e0e0';
+      });
+      
+      // Ajustar formulário
+      document.querySelectorAll('.form-control').forEach(input => {
+        input.style.backgroundColor = '#2d2d2d';
+        input.style.borderColor = '#444';
+        input.style.color = '#e0e0e0';
+      });
+      
+      document.querySelectorAll('.form-label').forEach(label => {
+        label.style.color = '#e0e0e0';
+      });
+      
+      document.querySelectorAll('.text-muted').forEach(text => {
+        text.style.color = '#adb5bd !important';
+      });
+      
+      // Ajustar mapa
+      document.querySelector('.card iframe').style.filter = 'grayscale(70%) invert(90%)';
+      
+      // Mudar ícone
+      const icon = darkModeToggle.querySelector('i');
+      if (icon) {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+      }
+      
+      // Adicionar estilo para elementos específicos da página
+      const style = document.createElement('style');
+      style.id = 'dark-mode-contact-style';
+      style.textContent = `
+        .dark-mode .bg-dark-subtle {
+          background-color: #1a1a1a !important;
+        }
+        .dark-mode .card {
+          background-color: #1e1e1e;
+          color: #e0e0e0;
+        }
+        .dark-mode .btn-outline-primary,
+        .dark-mode .btn-outline-success,
+        .dark-mode .btn-outline-info {
+          color: #e0e0e0;
+          border-color: currentColor;
+        }
+        .dark-mode .btn-outline-primary:hover,
+        .dark-mode .btn-outline-success:hover,
+        .dark-mode .btn-outline-info:hover {
+          color: #000;
+          background-color: #e0e0e0;
+        }
+        .dark-mode .social-icon {
+          background-color: rgba(255, 255, 255, 0.2);
+        }
+        .dark-mode .social-icon:hover {
+          background-color: #e0e0e0;
+          color: #121212;
+        }
+        .dark-mode .form-control:focus {
+          background-color: #2d2d2d;
+          border-color: #0d6efd;
+          box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+        }
+        .dark-mode .invalid-feedback {
+          color: #f77;
+        }
+      `;
+      document.head.appendChild(style);
+    }
+    
+    // Função para remover o modo escuro
+    function removeDarkMode() {
+      document.body.classList.remove('dark-mode');
+      document.body.style.backgroundColor = '';
+      document.body.style.color = '';
+      
+      // Restaurar seções com fundo escuro
+      document.querySelectorAll('.bg-dark-subtle').forEach(section => {
+        section.classList.remove('bg-dark-subtle');
+        section.classList.add('bg-light');
+        section.style.backgroundColor = '';
+      });
+      
+      // Restaurar cards de contato
+      document.querySelectorAll('.contact-card').forEach(card => {
+        card.style.backgroundColor = '';
+        card.style.color = '';
+      });
+      
+      // Restaurar formulário
+      document.querySelectorAll('.form-control').forEach(input => {
+        input.style.backgroundColor = '';
+        input.style.borderColor = '';
+        input.style.color = '';
+      });
+      
+      document.querySelectorAll('.form-label').forEach(label => {
+        label.style.color = '';
+      });
+      
+      document.querySelectorAll('.text-muted').forEach(text => {
+        text.style.color = '';
+      });
+      
+      // Restaurar mapa
+      document.querySelector('.card iframe').style.filter = '';
+      
+      // Mudar ícone
+      const icon = darkModeToggle.querySelector('i');
+      if (icon) {
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+      }
+      
+      // Remover estilo
+      const style = document.getElementById('dark-mode-contact-style');
+      if (style) {
+        style.remove();
+      }
+    }
+    
+    // Aplicar modo escuro se estiver salvo
+    if (savedDarkMode) {
+      applyDarkMode();
+    }
+    
+    // Adicionar evento de clique
+    darkModeToggle.addEventListener('click', function() {
+      if (document.body.classList.contains('dark-mode')) {
+        removeDarkMode();
+        localStorage.setItem('darkMode', 'false');
+      } else {
+        applyDarkMode();
+        localStorage.setItem('darkMode', 'true');
+      }
+    });
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiência | Currículo Digital</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Adicione este código logo após a tag <body> em cada página -->
+<div class="reading-progress-container">
+    <div class="reading-progress-bar" id="readingProgressBar"></div>
+  </div>
+  
+    <!-- Navbar Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Currículo Digital</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item ms-lg-3">
+                        <button id="darkModeToggle" class="btn btn-outline-light btn-sm rounded-circle">
+                          <i class="fas fa-moon"></i>
+                        </button>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="competencias.html">Competências</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formacao.html">Formação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="experiencias.html">Experiência</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <!-- Cabeçalho da Página com Banner Paralax -->
+    <header class="py-5 text-white position-relative">
+        <div class="experience-bg"></div>
+        <div class="container position-relative z-index-1 text-center">
+            <div class="py-4 px-3 rounded bg-dark bg-opacity-75">
+                <h1 class="display-4 fw-bold">Experiência</h1>
+                <p class="lead mb-0">Projetos académicos e atividades extracurriculares</p>
+                <div class="mt-3">
+                    <i class="fas fa-laptop-code fa-2x mx-2"></i>
+                    <i class="fas fa-project-diagram fa-2x mx-2"></i>
+                    <i class="fas fa-code fa-2x mx-2"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Projetos em Cards com Filtro -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Portfólio de Projetos</h2>
+                <p class="lead text-muted">Trabalhos desenvolvidos e disponíveis para visualização</p>
+            </div>
+            
+            <!-- Filtros de Projetos -->
+            <div class="d-flex justify-content-center mb-4">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-primary active filter-btn" data-filter="all">Todos</button>
+                    <button type="button" class="btn btn-outline-primary filter-btn" data-filter="app">App's</button>
+                    <button type="button" class="btn btn-outline-primary filter-btn" data-filter="web">Web</button>
+                    <button type="button" class="btn btn-outline-primary filter-btn" data-filter="game">Jogos</button>
+                    <button type="button" class="btn btn-outline-primary filter-btn" data-filter="hardware">Hardware</button>
+                </div>
+            </div>
+            
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 portfolio-container">
+                                <!-- Projeto 1 -->
+                                <div class="col portfolio-item" data-category="app">
+                                    <div class="card h-100 border-0 shadow-sm project-card">
+                                        <img src="assets/images/project0.jpg" class="card-img-top" alt="Currículo Digital">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Aplicação Mobile com IA</h4>
+                                            <p class="card-text">Desenvolvimento de uma Aplicação Mobile para gestão de inventário com reconhecimento e uso de IA.</p>
+                                            <div class="d-flex flex-wrap mb-3">
+                                                <span class="badge bg-success me-2 mb-1">React Native</span>
+                                                <span class="badge bg-primary me-2 mb-1">Expo</span>
+                                                <span class="badge bg-danger me-2 mb-1">Firebase</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer bg-transparent border-0 d-flex justify-content-between">
+                                            <a href="" class="btn btn-sm btn-outline-primary" target="_blank">
+                                                <i class="fas fa-eye me-1"></i> Link para download
+                                            </a>
+                                            <a href="https://github.com/gestama04/My-Inventory-App" class="btn btn-sm btn-dark" target="_blank">
+                                                <i class="fab fa-github me-1"></i> Código
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <!-- Projeto 2 -->
+                                <div class="col portfolio-item" data-category="web">
+                                    <div class="card h-100 border-0 shadow-sm project-card">
+                                        <img src="assets/images/project1.jpg" class="card-img-top" alt="Currículo Digital">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Currículo Digital</h4>
+                                            <p class="card-text">Desenvolvimento deste website de currículo digital utilizando tecnologias web modernas e responsive design.</p>
+                                            <div class="d-flex flex-wrap mb-3">
+                                                <span class="badge bg-primary me-2 mb-1">HTML5</span>
+                                                <span class="badge bg-primary me-2 mb-1">CSS</span>
+                                                <span class="badge bg-primary me-2 mb-1">JavaScript</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer bg-transparent border-0 d-flex justify-content-between">
+                                            <a href="index.html" class="btn btn-sm btn-outline-primary" target="_blank">
+                                                <i class="fas fa-eye me-1"></i> Ver Projeto
+                                            </a>
+                                            <a href="https://github.com/gestama04/CURRICULO-DIGITAL-BOOTSTRAPP" class="btn btn-sm btn-dark" target="_blank">
+                                                <i class="fab fa-github me-1"></i> Código
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Projeto 3 -->
+                                <div class="col portfolio-item" data-category="game">
+                                    <div class="card h-100 border-0 shadow-sm project-card">
+                                        <img src="assets/images/project2.jpg" class="card-img-top" alt="Jogo 4 em Linha">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Jogo 4 em Linha</h4>
+                                            <p class="card-text">Desenvolvimento de um jogo com base no 4 em linha, implementando lógica de jogos e interface interativa.</p>
+                                            <div class="d-flex flex-wrap mb-3">
+                                                <span class="badge bg-success me-2 mb-1">Python</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer bg-transparent border-0 d-flex justify-content-end">
+                                            <a href="https://github.com/gestama04/JOGO-4-EM-LINHA" class="btn btn-sm btn-dark" target="_blank">
+                                                <i class="fab fa-github me-1"></i> Código
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Projeto 4 -->
+                                <div class="col portfolio-item" data-category="game">
+                                    <div class="card h-100 border-0 shadow-sm project-card">
+                                        <img src="assets/images/project3.jpg" class="card-img-top" alt="Jogo Space Invaders">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Jogo Space Invaders</h4>
+                                            <p class="card-text">Desenvolvimento de um jogo com base em Space Invaders, recriando o clássico com mecânicas modernas.</p>
+                                            <div class="d-flex flex-wrap mb-3">
+                                                <span class="badge bg-danger me-2 mb-1">Java</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer bg-transparent border-0 d-flex justify-content-end">
+                                            <a href="https://github.com/gestama04/SpaceInvaders" class="btn btn-sm btn-dark" target="_blank">
+                                                <i class="fab fa-github me-1"></i> Código
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Projeto 5 -->
+                                <div class="col portfolio-item" data-category="hardware">
+                                    <div class="card h-100 border-0 shadow-sm project-card">
+                                        <img src="assets/images/project4.jpg" class="card-img-top" alt="Robot Otto">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Robot Otto</h4>
+                                            <p class="card-text">Montagem e desenvolvimento do código do robot Otto Biped, um projeto de robótica com sensores e atuadores.</p>
+                                            <div class="d-flex flex-wrap mb-3">
+                                                <span class="badge bg-info me-2 mb-1">Arduino</span>
+                                                <span class="badge bg-info me-2 mb-1">Robótica</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer bg-transparent border-0 d-flex justify-content-end">
+                                            <a href="https://github.com/gestama04/OTTO" class="btn btn-sm btn-dark" target="_blank">
+                                                <i class="fab fa-github me-1"></i> Código
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Projeto 6 -->
+                                <div class="col portfolio-item" data-category="hardware">
+                                    <div class="card h-100 border-0 shadow-sm project-card">
+                                        <img src="assets/images/project5.jpg" class="card-img-top" alt="Planta ITED">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Projeto ITED</h4>
+                                            <p class="card-text">Desenho de uma planta ITED completa, seguindo normas técnicas e regulamentações atuais.</p>
+                                            <div class="d-flex flex-wrap mb-3">
+                                                <span class="badge bg-warning text-dark me-2 mb-1">AutoCAD 2024</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer bg-transparent border-0 d-flex justify-content-end">
+                                            <a href="https://github.com/gestama04/Planta-ITED" class="btn btn-sm btn-dark" target="_blank">
+                                                <i class="fab fa-github me-1"></i> Ver
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Projeto 7 -->
+                                <div class="col portfolio-item" data-category="web">
+                                    <div class="card h-100 border-0 shadow-sm project-card">
+                                        <img src="assets/images/project6.jpg" class="card-img-top" alt="Calculadora com Comunicação Cliente-Servidor">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Calculadora Cliente-Servidor</h4>
+                                            <p class="card-text">Calculadora com Comunicação Cliente-Servidor, demonstrando princípios de sistemas distribuídos.</p>
+                                            <div class="d-flex flex-wrap mb-3">
+                                                <span class="badge bg-danger me-2 mb-1">Java</span>
+                                                <span class="badge bg-primary me-2 mb-1">PHP</span>
+                                                <span class="badge bg-primary me-2 mb-1">HTML</span>
+                                                <span class="badge bg-primary me-2 mb-1">CSS</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer bg-transparent border-0 d-flex justify-content-end">
+                                            <a href="https://github.com/gestama04/CALCULADORA" class="btn btn-sm btn-dark" target="_blank">
+                                                <i class="fab fa-github me-1"></i> Código
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+    <!-- Experiências Acadêmicas com Timeline Vertical -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Projetos Académicos</h2>
+                <p class="lead text-muted">Trabalhos desenvolvidos durante o curso</p>
+            </div>
+            
+            <div class="vertical-timeline">
+                <!-- Projeto 1 -->
+                <div class="timeline-block">
+                    <div class="timeline-icon bg-primary">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    
+                    <div class="timeline-content card border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-primary px-3 py-2">2025</span>
+                                <span class="text-muted">Projeto Final</span>
+                            </div>
+                            <h3>Projeto Final de Curso</h3>
+                            <h5 class="text-muted">Engenharia Informática e Telecomunicações - ESTGL</h5>
+                            <p>Desenvolvimento de uma aplicação de inventário pessoal com IA para android/ios.</p>
+                            
+                            <div class="mt-3">
+                                <h6 class="fw-bold"><i class="fas fa-tasks me-2"></i>Responsabilidades:</h6>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-transparent ps-0">
+                                        <i class="fas fa-check-circle text-success me-2"></i>Implementação da linguagem TypeScript
+                                    </li>
+                                    <li class="list-group-item bg-transparent ps-0">
+                                        <i class="fas fa-check-circle text-success me-2"></i>Uso de Firebase para autenticação e base de dados
+                                    </li>
+                                    <li class="list-group-item bg-transparent ps-0">
+                                        <i class="fas fa-check-circle text-success me-2"></i>Desenvolvida em React Native
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mt-3 d-flex">
+                                <span class="badge bg-secondary me-2">TypeScript</span>
+                                <span class="badge bg-secondary me-2">Node.js</span>
+                                <span class="badge bg-secondary me-2">React Native</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projeto 2 -->
+                <div class="timeline-block">
+                    <div class="timeline-icon bg-success">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    
+                    <div class="timeline-content card border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-success px-3 py-2">2024</span>
+                                <span class="text-muted">Sistemas de Telecomunicações</span>
+                            </div>
+                            <h3>Projeto de Sistemas de Telecomunicações 2</h3>
+                            <h5 class="text-muted">Disciplina de Sistemas de Telecomunicações - ESTGL</h5>
+                            <p>Participação em grupo para o desenvolvimento e montagem do robot Otto biped.</p>
+                            
+                            <div class="mt-3">
+                                <h6 class="fw-bold"><i class="fas fa-tasks me-2"></i>Responsabilidades:</h6>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-transparent ps-0">
+                                        <i class="fas fa-check-circle text-success me-2"></i>Uso de servo motores para o movimento e sensor ultrassónico HC-SR04 para detetar obstáculos
+                                    </li>
+                                    <li class="list-group-item bg-transparent ps-0">
+                                        <i class="fas fa-check-circle text-success me-2"></i>Implementação do código e bibliotecas em arduíno
+                                    </li>
+                                    <li class="list-group-item bg-transparent ps-0">
+                                        <i class="fas fa-check-circle text-success me-2"></i>Documentação dos processos e resultados obtidos
+                                    </li>
+                                    <li class="list-group-item bg-transparent ps-0">
+                                        <i class="fas fa-check-circle text-success me-2"></i>Apresentação do projeto para colegas e professores
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mt-3 d-flex">
+                                <span class="badge bg-secondary me-2">Arduino</span>
+                                <span class="badge bg-secondary me-2">Robótica</span>
+                                <span class="badge bg-secondary me-2">Sensores</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projeto 3 -->
+                <div class="timeline-block">
+                    <div class="timeline-icon bg-info">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    
+                    <div class="timeline-content card border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-info px-3 py-2">2024</span>
+                                <span class="text-muted">Sistemas de Telecomunicações</span>
+                            </div>
+                            <h3>Projeto de Sistemas de Telecomunicações 1</h3>
+                            <h5 class="text-muted">Disciplina de Sistemas de Telecomunicações - ESTGL</h5>
+                            <p>Participação em grupo para o desenvolvimento de um leitor de temperatura e humidade.</p>
+                            
+                            <div class="mt-3">
+                                <h6 class="fw-bold"><i class="fas fa-tasks me-2"></i>Responsabilidades:</h6>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-transparent ps-0">
+                                        <i class="fas fa-check-circle text-success me-2"></i>Uso de sensores DHT11 e HC06 para leitura de temperatura e envio dos valores via bluetooth
+                                    </li>
+                                    <li class="list-group-item bg-transparent ps-0">
+                                        <i class="fas fa-check-circle text-success me-2"></i>Implementação do código e bibliotecas em arduíno
+                                    </li>
+                                    <li class="list-group-item bg-transparent ps-0">
+                                        <i class="fas fa-check-circle text-success me-2"></i>Documentação dos processos e resultados obtidos
+                                    </li>
+                                    <li class="list-group-item bg-transparent ps-0">
+                                        <i class="fas fa-check-circle text-success me-2"></i>Apresentação do projeto para colegas e professores
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mt-3 d-flex flex-wrap">
+                                <span class="badge bg-secondary me-2 mb-1">Arduino</span>
+                                <span class="badge bg-secondary me-2 mb-1">Sensores</span>
+                                <span class="badge bg-secondary me-2 mb-1">Bluetooth</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projeto 4 -->
+                <div class="timeline-block">
+                    <div class="timeline-icon bg-warning">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    
+                    <div class="timeline-content card border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-warning px-3 py-2 text-dark">2024</span>
+                                <span class="text-muted">Infraestruturas de Redes</span>
+                            </div>
+                            <h3>Projeto de Infraestruturas de Redes de Comunicação</h3>
+                            <h5 class="text-muted">Disciplina de Infraestruturas de Redes de Comunicação - ESTGL</h5>
+                            <p>Desenvolvimento de uma planta / rede ITED</p>
+                            
+                            <div class="mt-3">
+                                <h6 class="fw-bold"><i class="fas fa-tasks me-2"></i>Responsabilidades:</h6>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-transparent ps-0">
+                                        <i class="fas fa-check-circle text-success me-2"></i>Planta da casa com todas as ligações
+                                    </li>
+                                    <li class="list-group-item bg-transparent ps-0">
+                                        <i class="fas fa-check-circle text-success me-2"></i>Desenvolvido em Autocad e CADItedItur
+                                    </li>
+                                    <li class="list-group-item bg-transparent ps-0">
+                                        <i class="fas fa-check-circle text-success me-2"></i>Apresentação do projeto ao professor
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mt-3 d-flex">
+                                <span class="badge bg-secondary me-2">AutoCAD</span>
+                                <span class="badge bg-secondary me-2">CADItedItur</span>
+                                <span class="badge bg-secondary me-2">ITED</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Outros projetos seguiriam o mesmo padrão -->
+            </div>
+        </div>
+    </section>
+                    
+                    <!-- Estatísticas -->
+                    <section class="py-5 bg-dark text-white">
+                        <div class="container">
+                            <div class="row text-center">
+                                <div class="col-md-3 mb-4 mb-md-0">
+                                    <div class="stat-item">
+                                        <i class="fas fa-code fa-3x mb-3"></i>
+                                        <h2 class="counter">7</h2>
+                                        <p>Projetos Concluídos</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4 mb-md-0">
+                                    <div class="stat-item">
+                                        <i class="fas fa-laptop-code fa-3x mb-3"></i>
+                                        <h2 class="counter">5</h2>
+                                        <p>Linguagens Utilizadas</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4 mb-md-0">
+                                    <div class="stat-item">
+                                        <i class="fas fa-graduation-cap fa-3x mb-3"></i>
+                                        <h2 class="counter">6</h2>
+                                        <p>Disciplinas Aplicadas</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="stat-item">
+                                        <i class="fas fa-clock fa-3x mb-3"></i>
+                                        <h2 class="counter">500</h2>
+                                        <p>Horas de Desenvolvimento</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                
+                    <!-- Rodapé -->
+                    <footer class="py-4 bg-dark text-white">
+                        <div class="container text-center">
+                            <p class="mb-0">&copy; 2025 Bernardo Silva. Todos os direitos reservados.</p>
+                        </div>
+                    </footer>
+                
+                    <!-- Bootstrap JS Bundle with Popper -->
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+                    
+                    <!-- AOS - Animate On Scroll Library -->
+                    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+                    
+                    <!-- Custom JS -->
+                    <script src="js/script.js"></script>
+                    
+                    <script>
+                        // Inicializar AOS
+                        AOS.init({
+                            duration: 1000,
+                            once: true
+                        });
+                        
+                        // Filtro de projetos
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const filterBtns = document.querySelectorAll('.filter-btn');
+                            const portfolioItems = document.querySelectorAll('.portfolio-item');
+                            
+                            filterBtns.forEach(btn => {
+                                btn.addEventListener('click', function() {
+                                    // Remover classe active de todos os botões
+                                    filterBtns.forEach(btn => btn.classList.remove('active'));
+                                    // Adicionar classe active ao botão clicado
+                                    this.classList.add('active');
+                                    
+                                    const filterValue = this.getAttribute('data-filter');
+                                    
+                                    portfolioItems.forEach(item => {
+                                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                                            item.style.display = 'block';
+                                        } else {
+                                            item.style.display = 'none';
+                                        }
+                                    });
+                                });
+                            });
+                            
+                            // Counter animation
+                            const counters = document.querySelectorAll('.counter');
+                            const speed = 200;
+                            
+                            counters.forEach(counter => {
+                                const updateCount = () => {
+                                    const target = +counter.getAttribute('data-target') || +counter.innerText;
+                                    const count = +counter.innerText;
+                                    const inc = target / speed;
+                                    
+                                    if (count < target) {
+                                        counter.innerText = Math.ceil(count + inc);
+                                        setTimeout(updateCount, 1);
+                                    } else {
+                                        counter.innerText = target;
+                                    }
+                                };
+                                
+                                updateCount();
+                            });
+                        });
+                    </script>
+                    
+                    <style>
+                        /* Estilo para o efeito parallax no cabeçalho */
+                        header {
+                            height: 400px;
+                            overflow: hidden;
+                        }
+                        
+                        .experience-bg {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background-image: url('assets/images/experience-bg.jpg');
+                            background-size: cover;
+                            background-position: center;
+                            background-attachment: fixed;
+                            filter: brightness(0.7);
+                        }
+                        
+                        .z-index-1 {
+                            z-index: 1;
+                        }
+                        
+                        /* Estilo para a timeline vertical */
+                        .vertical-timeline {
+                            position: relative;
+                            max-width: 1200px;
+                            margin: 0 auto;
+                            padding: 20px 0;
+                        }
+                        
+                        .vertical-timeline::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 18px;
+                            height: 100%;
+                            width: 4px;
+                            background: #e9ecef;
+                        }
+                        
+                        .timeline-block {
+                            position: relative;
+                            margin: 2em 0;
+                        }
+                        
+                        .timeline-block:first-child {
+                            margin-top: 0;
+                        }
+                        
+                        .timeline-block:last-child {
+                            margin-bottom: 0;
+                        }
+                        
+                        .timeline-icon {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: white;
+                        }
+                        
+                        .timeline-content {
+                            position: relative;
+                            margin-left: 60px;
+                            margin-bottom: 2em;
+                            border-radius: 0.25rem;
+                        }
+                        
+                        /* Estilo para os cards de projetos */
+                        .project-card {
+                            transition: transform 0.3s ease, box-shadow 0.3s ease;
+                            overflow: hidden;
+                        }
+                        
+                        .project-card:hover {
+                            transform: translateY(-10px);
+                            box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+                        }
+                        
+                        .project-card img {
+                            height: 200px;
+                            object-fit: cover;
+                            transition: transform 0.5s ease;
+                        }
+                        
+                        .project-card:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* Estilo para as estatísticas */
+        .stat-item {
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .counter {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        
+        /* Responsividade para telas médias */
+        @media (min-width: 768px) {
+            .vertical-timeline::before {
+                left: 50%;
+                margin-left: -2px;
+            }
+            
+            .timeline-block {
+                margin: 4em 0;
+            }
+            
+            .timeline-icon {
+                left: 50%;
+                margin-left: -20px;
+                width: 40px;
+                height: 40px;
+            }
+            
+            .timeline-content {
+                width: 45%;
+                margin-left: 0;
+            }
+            
+            .timeline-block:nth-child(even) .timeline-content {
+                float: right;
+            }
+            
+            .timeline-block:nth-child(odd) .timeline-content {
+                float: left;
+            }
+            
+            .timeline-block::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        }
+        
+        /* Animações para os botões de filtro */
+        .filter-btn {
+            transition: all 0.3s ease;
+        }
+        
+        .filter-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .filter-btn.active {
+            background-color: #0d6efd;
+            color: white;
+            box-shadow: 0 4px 8px rgba(13, 110, 253, 0.2);
+        }
+        
+        /* Animação para os itens do portfólio */
+        .portfolio-item {
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+    </style>
+    <script>
+        // Modo escuro para a página de experiências
+document.addEventListener('DOMContentLoaded', function() {
+  const darkModeToggle = document.getElementById('darkModeToggle');
+  if (darkModeToggle) {
+    // Verificar preferência salva
+    const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+    
+    // Função para aplicar o modo escuro
+    function applyDarkMode() {
+      document.body.classList.add('dark-mode');
+      document.body.style.backgroundColor = '#121212';
+      document.body.style.color = '#e0e0e0';
+      
+      // Ajustar timeline
+      document.querySelectorAll('.vertical-timeline::before').forEach(line => {
+        line.style.backgroundColor = '#333';
+      });
+      
+      document.querySelectorAll('.timeline-content').forEach(content => {
+        content.style.backgroundColor = '#1e1e1e';
+        content.style.color = '#e0e0e0';
+      });
+      
+      // Ajustar cards de projetos
+      document.querySelectorAll('.project-card').forEach(card => {
+        card.style.backgroundColor = '#1e1e1e';
+        card.style.color = '#e0e0e0';
+      });
+      
+      document.querySelectorAll('.card-body').forEach(body => {
+        body.style.backgroundColor = '#1e1e1e';
+        body.style.color = '#e0e0e0';
+      });
+      
+      document.querySelectorAll('.card-footer').forEach(footer => {
+        footer.style.backgroundColor = '#1e1e1e';
+      });
+      
+      // Ajustar seção de estatísticas
+      document.querySelectorAll('.stat-item').forEach(stat => {
+        stat.style.backgroundColor = 'rgba(255, 255, 255, 0.05)';
+      });
+      
+      // Ajustar modais
+      document.querySelectorAll('.modal-content').forEach(modal => {
+        modal.style.backgroundColor = '#1e1e1e';
+        modal.style.color = '#e0e0e0';
+      });
+      
+      // Mudar ícone
+      const icon = darkModeToggle.querySelector('i');
+      if (icon) {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+      }
+      
+      // Adicionar estilo para elementos específicos da página
+      const style = document.createElement('style');
+      style.id = 'dark-mode-experience-style';
+      style.textContent = `
+        .dark-mode .bg-light {
+          background-color: #1a1a1a !important;
+        }
+        .dark-mode .text-muted {
+          color: #adb5bd !important;
+        }
+        .dark-mode .list-group-item {
+          background-color: transparent;
+          color: #e0e0e0;
+        }
+        .dark-mode .timeline-icon {
+          box-shadow: 0 0 0 4px #1a1a1a, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+        }
+        .dark-mode .filter-btn:not(.active) {
+          color: #e0e0e0;
+          border-color: #e0e0e0;
+        }
+      `;
+      document.head.appendChild(style);
+    }
+    
+    // Função para remover o modo escuro
+    function removeDarkMode() {
+      document.body.classList.remove('dark-mode');
+      document.body.style.backgroundColor = '';
+      document.body.style.color = '';
+      
+      // Restaurar timeline
+      document.querySelectorAll('.vertical-timeline::before').forEach(line => {
+        line.style.backgroundColor = '';
+      });
+      
+      document.querySelectorAll('.timeline-content').forEach(content => {
+        content.style.backgroundColor = '';
+        content.style.color = '';
+      });
+      
+      // Restaurar cards de projetos
+      document.querySelectorAll('.project-card').forEach(card => {
+        card.style.backgroundColor = '';
+        card.style.color = '';
+      });
+      
+      document.querySelectorAll('.card-body').forEach(body => {
+        body.style.backgroundColor = '';
+        body.style.color = '';
+      });
+      
+      document.querySelectorAll('.card-footer').forEach(footer => {
+        footer.style.backgroundColor = '';
+      });
+      
+      // Restaurar seção de estatísticas
+      document.querySelectorAll('.stat-item').forEach(stat => {
+        stat.style.backgroundColor = '';
+      });
+      
+      // Restaurar modais
+      document.querySelectorAll('.modal-content').forEach(modal => {
+        modal.style.backgroundColor = '';
+        modal.style.color = '';
+      });
+      
+      // Mudar ícone
+      const icon = darkModeToggle.querySelector('i');
+      if (icon) {
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+      }
+      
+      // Remover estilo
+      const style = document.getElementById('dark-mode-experience-style');
+      if (style) {
+        style.remove();
+      }
+    }
+    
+    // Aplicar modo escuro se estiver salvo
+    if (savedDarkMode) {
+      applyDarkMode();
+    }
+    
+    // Adicionar evento de clique
+    darkModeToggle.addEventListener('click', function() {
+      if (document.body.classList.contains('dark-mode')) {
+        removeDarkMode();
+        localStorage.setItem('darkMode', 'false');
+      } else {
+        applyDarkMode();
+        localStorage.setItem('darkMode', 'true');
+      }
+    });
+  }
+});
+</script>
+</body>
+</html>
+    
