@@ -18,7 +18,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
         const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         const scrolled = (winScroll / height) * 100;
-        document.getElementById('readingProgressBar').style.width = scrolled + '%';
+        const progressBar = document.getElementById('readingProgressBar');
+        if (progressBar) {
+            progressBar.style.width = scrolled + '%';
+        }
     });
    
     // Botão de modo escuro
@@ -29,8 +32,10 @@ document.addEventListener('DOMContentLoaded', function() {
         if (savedDarkMode === 'true') {
             document.body.classList.add('dark-mode');
             const icon = darkModeToggle.querySelector('i');
-            icon.classList.remove('fa-moon');
-            icon.classList.add('fa-sun');
+            if (icon) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            }
         }
        
         darkModeToggle.addEventListener('click', function() {
@@ -38,12 +43,14 @@ document.addEventListener('DOMContentLoaded', function() {
            
             // Alternar ícone
             const icon = this.querySelector('i');
-            if (icon.classList.contains('fa-moon')) {
-                icon.classList.remove('fa-moon');
-                icon.classList.add('fa-sun');
-            } else {
-                icon.classList.remove('fa-sun');
-                icon.classList.add('fa-moon');
+            if (icon) {
+                if (icon.classList.contains('fa-moon')) {
+                    icon.classList.remove('fa-moon');
+                    icon.classList.add('fa-sun');
+                } else {
+                    icon.classList.remove('fa-sun');
+                    icon.classList.add('fa-moon');
+                }
             }
            
             // Salvar preferência
@@ -68,12 +75,16 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', animateOnScroll);
     animateOnScroll(); // Executar uma vez no carregamento
    
-    // Adicionar botão voltar ao topo
-    const backToTopButton = document.createElement('button');
-    backToTopButton.className = 'back-to-top';
-    backToTopButton.innerHTML = '<i class="fas fa-arrow-up"></i>';
-    backToTopButton.setAttribute('aria-label', 'Voltar ao topo');
-    document.body.appendChild(backToTopButton);
+    // Adicionar botão voltar ao topo (se não existir)
+    let backToTopButton = document.getElementById('backToTop');
+    if (!backToTopButton) {
+        backToTopButton = document.createElement('button');
+        backToTopButton.id = 'backToTop';
+        backToTopButton.className = 'back-to-top';
+        backToTopButton.innerHTML = '<i class="fas fa-arrow-up"></i>';
+        backToTopButton.setAttribute('aria-label', 'Voltar ao topo');
+        document.body.appendChild(backToTopButton);
+    }
    
     backToTopButton.addEventListener('click', function() {
         window.scrollTo({
@@ -90,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
    
-    // Relógio em tempo real (já presente no HTML)
+    // Relógio em tempo real
     function updateClock() {
         const now = new Date();
         const timeString = now.toLocaleTimeString();
@@ -99,13 +110,13 @@ document.addEventListener('DOMContentLoaded', function() {
             clockElement.textContent = timeString;
         }
     }
-    
+   
     if (document.getElementById('clock')) {
         setInterval(updateClock, 1000);
         updateClock();
     }
 
-    // Adicionar funcionalidade de filtro para projetos (para página de experiências)
+        // Adicionar funcionalidade de filtro para projetos (para página de experiências)
     const filterButtons = document.querySelectorAll('.filter-btn');
     if (filterButtons.length > 0) {
         filterButtons.forEach(button => {
@@ -195,6 +206,30 @@ document.addEventListener('DOMContentLoaded', function() {
             window.print();
         });
     });
+
+    // CORREÇÃO: Ajustar layout responsivo dinamicamente
+    function adjustMobileLayout() {
+        const header = document.querySelector('header.py-5');
+        const aboutSection = document.querySelector('section.py-5');
+        
+        if (window.innerWidth <= 768 && header && aboutSection) {
+            // Garantir espaçamento adequado entre header e seção sobre
+            const headerHeight = header.offsetHeight;
+            aboutSection.style.marginTop = '1rem';
+            
+            // Ajustar cards no header
+            const headerCard = header.querySelector('.p-4.bg-white.rounded.shadow');
+            if (headerCard) {
+                headerCard.style.marginBottom = '1.5rem';
+                headerCard.style.position = 'relative';
+                headerCard.style.zIndex = '1';
+            }
+        }
+    }
+
+    // Executar ajuste no carregamento e redimensionamento
+    adjustMobileLayout();
+    window.addEventListener('resize', adjustMobileLayout);
 });
 
 // Validação do formulário de contato
@@ -214,13 +249,19 @@ function validateForm() {
     if (name) {
         if (!name.value.trim()) {
             name.classList.add('is-invalid');
-            document.getElementById('nameError').style.display = 'block';
-            document.getElementById('nameError').textContent = 'Por favor, informe seu nome.';
+            const nameError = document.getElementById('nameError');
+            if (nameError) {
+                nameError.style.display = 'block';
+                nameError.textContent = 'Por favor, informe seu nome.';
+            }
             isValid = false;
         } else if (name.value.trim().length < 3) {
             name.classList.add('is-invalid');
-            document.getElementById('nameError').style.display = 'block';
-            document.getElementById('nameError').textContent = 'O nome deve ter pelo menos 3 caracteres.';
+            const nameError = document.getElementById('nameError');
+            if (nameError) {
+                nameError.style.display = 'block';
+                nameError.textContent = 'O nome deve ter pelo menos 3 caracteres.';
+            }
             isValid = false;
         }
     }
@@ -231,13 +272,19 @@ function validateForm() {
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!email.value.trim()) {
             email.classList.add('is-invalid');
-            document.getElementById('emailError').style.display = 'block';
-            document.getElementById('emailError').textContent = 'Por favor, informe seu email.';
+            const emailError = document.getElementById('emailError');
+            if (emailError) {
+                emailError.style.display = 'block';
+                emailError.textContent = 'Por favor, informe seu email.';
+            }
             isValid = false;
         } else if (!emailPattern.test(email.value.trim())) {
             email.classList.add('is-invalid');
-            document.getElementById('emailError').style.display = 'block';
-            document.getElementById('emailError').textContent = 'Por favor, informe um email válido.';
+            const emailError = document.getElementById('emailError');
+            if (emailError) {
+                emailError.style.display = 'block';
+                emailError.textContent = 'Por favor, informe um email válido.';
+            }
             isValid = false;
         }
     }
@@ -247,13 +294,19 @@ function validateForm() {
     if (subject) {
         if (!subject.value.trim()) {
             subject.classList.add('is-invalid');
-            document.getElementById('subjectError').style.display = 'block';
-            document.getElementById('subjectError').textContent = 'Por favor, informe o assunto.';
+            const subjectError = document.getElementById('subjectError');
+            if (subjectError) {
+                subjectError.style.display = 'block';
+                subjectError.textContent = 'Por favor, informe o assunto.';
+            }
             isValid = false;
         } else if (subject.value.trim().length < 5) {
             subject.classList.add('is-invalid');
-            document.getElementById('subjectError').style.display = 'block';
-            document.getElementById('subjectError').textContent = 'O assunto deve ter pelo menos 5 caracteres.';
+            const subjectError = document.getElementById('subjectError');
+            if (subjectError) {
+                subjectError.style.display = 'block';
+                subjectError.textContent = 'O assunto deve ter pelo menos 5 caracteres.';
+            }
             isValid = false;
         }
     }
@@ -263,13 +316,19 @@ function validateForm() {
     if (message) {
         if (!message.value.trim()) {
             message.classList.add('is-invalid');
-            document.getElementById('messageError').style.display = 'block';
-            document.getElementById('messageError').textContent = 'Por favor, escreva uma mensagem.';
+            const messageError = document.getElementById('messageError');
+            if (messageError) {
+                messageError.style.display = 'block';
+                messageError.textContent = 'Por favor, escreva uma mensagem.';
+            }
             isValid = false;
         } else if (message.value.trim().length < 10) {
             message.classList.add('is-invalid');
-            document.getElementById('messageError').style.display = 'block';
-            document.getElementById('messageError').textContent = 'A mensagem deve ter pelo menos 10 caracteres.';
+            const messageError = document.getElementById('messageError');
+            if (messageError) {
+                messageError.style.display = 'block';
+                messageError.textContent = 'A mensagem deve ter pelo menos 10 caracteres.';
+            }
             isValid = false;
         }
     }
@@ -278,8 +337,11 @@ function validateForm() {
     const terms = document.getElementById('terms');
     if (terms && !terms.checked) {
         terms.classList.add('is-invalid');
-        document.getElementById('termsError').style.display = 'block';
-        document.getElementById('termsError').textContent = 'Você deve concordar com os termos de privacidade.';
+        const termsError = document.getElementById('termsError');
+        if (termsError) {
+            termsError.style.display = 'block';
+            termsError.textContent = 'Você deve concordar com os termos de privacidade.';
+        }
         isValid = false;
     }
    
@@ -311,3 +373,46 @@ function validateForm() {
    
     return isValid;
 }
+
+// Função para melhorar a performance em dispositivos móveis
+function optimizeForMobile() {
+    // Detectar se é dispositivo móvel
+    const isMobile = window.innerWidth <= 768;
+    
+    if (isMobile) {
+        // Reduzir animações em dispositivos móveis para melhor performance
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.style.transition = 'transform 0.2s ease';
+        });
+        
+        // Otimizar scroll em dispositivos móveis
+        let ticking = false;
+        
+        function updateScrollProgress() {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            
+            const progressBar = document.getElementById('readingProgressBar');
+            if (progressBar) {
+                progressBar.style.width = scrolled + '%';
+            }
+            
+            ticking = false;
+        }
+        
+        function requestScrollUpdate() {
+            if (!ticking) {
+                requestAnimationFrame(updateScrollProgress);
+                ticking = true;
+            }
+        }
+        
+        window.addEventListener('scroll', requestScrollUpdate, { passive: true });
+    }
+}
+
+// Executar otimizações quando a página carregar
+document.addEventListener('DOMContentLoaded', optimizeForMobile);
+window.addEventListener('resize', optimizeForMobile);
