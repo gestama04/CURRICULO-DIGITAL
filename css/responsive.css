@@ -55,6 +55,42 @@
 
 /* Smartphones */
 @media (max-width: 768px) {
+    /* CORREÇÃO: Ajustes específicos para o header do index.html */
+    header.py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    header .row.align-items-center {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    header .col-md-4 {
+        margin-bottom: 2rem;
+        order: 1;
+    }
+    
+    header .col-md-8 {
+        order: 2;
+        width: 100%;
+    }
+    
+    header .col-md-8 .p-4 {
+        margin-bottom: 2rem;
+    }
+    
+    /* CORREÇÃO: Espaçamento adequado entre seções */
+    section.py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    /* CORREÇÃO: Ajustes para evitar sobreposição */
+    .alert.alert-info {
+        margin-bottom: 1.5rem !important;
+    }
+    
     /* Ajustes para o cabeçalho */
     .hero-content {
         padding: 40px 20px;
@@ -117,6 +153,22 @@
 
 /* Dispositivos muito pequenos */
 @media (max-width: 480px) {
+    /* CORREÇÃO: Ajustes específicos para dispositivos muito pequenos */
+    header.py-5 {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+    
+    header .col-md-8 .p-4 {
+        padding: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    section.py-5 {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+    
     /* Ajustes para o cabeçalho */
     .hero-content h1 {
         font-size: 1.8rem;
