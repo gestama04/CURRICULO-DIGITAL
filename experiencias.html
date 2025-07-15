@@ -91,7 +91,7 @@
 <!-- Projeto 1 - Aplicação Mobile com IA -->
 <div class="col portfolio-item" data-category="app">
     <div class="card h-100 border-0 shadow-sm project-card">
-        <img src="assets/images/project0.jpg" class="card-img-top" alt="Aplicação Mobile com IA">
+        <img src="assets/images/project0.JPG" class="card-img-top" alt="Aplicação Mobile com IA">
         <div class="card-body">
             <h4 class="card-title">Aplicação Mobile com IA</h4>
             <p class="card-text">Desenvolvimento de uma Aplicação Mobile para gestão de inventário com reconhecimento e uso de IA.</p>
@@ -707,6 +707,97 @@
         .portfolio-item {
             transition: opacity 0.4s ease, transform 0.4s ease;
         }
+        /* Correção para dispositivos móveis */
+@media (max-width: 767px) {
+    /* Garantir que a timeline não fique atrás de outras seções */
+    .vertical-timeline {
+        position: relative;
+        z-index: 1;
+        clear: both;
+    }
+    
+    /* Ajustar a timeline para mobile */
+    .vertical-timeline::before {
+        left: 18px;
+        margin-left: 0;
+    }
+    
+    .timeline-block {
+        margin: 2em 0;
+        width: 100%;
+        clear: both;
+    }
+    
+    .timeline-icon {
+        left: 0;
+        margin-left: 0;
+        position: absolute;
+        z-index: 2;
+    }
+    
+    .timeline-content {
+        width: calc(100% - 60px);
+        margin-left: 60px;
+        float: none !important;
+        clear: both;
+        position: relative;
+        z-index: 1;
+    }
+    
+    /* Garantir que a seção de projetos académicos tenha espaço adequado */
+    section.bg-light {
+        position: relative;
+        z-index: 1;
+        clear: both;
+        overflow: visible;
+    }
+    
+    /* Ajustar a seção de estatísticas */
+    section.bg-dark {
+        position: relative;
+        z-index: 0;
+        margin-top: 0;
+    }
+    
+    /* Remover floats problemáticos em mobile */
+    .timeline-block:nth-child(even) .timeline-content,
+    .timeline-block:nth-child(odd) .timeline-content {
+        float: none !important;
+        width: calc(100% - 60px);
+        margin-left: 60px;
+    }
+    
+    /* Garantir clearfix */
+    .timeline-block::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+/* Correção adicional para telas muito pequenas */
+@media (max-width: 480px) {
+    .timeline-content {
+        width: calc(100% - 50px);
+        margin-left: 50px;
+    }
+    
+    .timeline-icon {
+        width: 30px;
+        height: 30px;
+        left: 5px;
+    }
+    
+    .vertical-timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-block:nth-child(even) .timeline-content,
+    .timeline-block:nth-child(odd) .timeline-content {
+        width: calc(100% - 50px);
+        margin-left: 50px;
+    }
+}
     </style>
     <script>
         // Modo escuro para a página de experiências
