@@ -141,12 +141,49 @@
             <div class="row">
                 <div class="col-lg-8">
                     <p class="lead">Sou licenciado em Engenharia Informática e Telecomunicações. Procuro constantemente aprender novas habilidades e enfrentar desafios criativos.</p>
-                        <p>Tenho um forte interesse em desenvolvimento web, inteligência artificial e aplicações interativas. Com espírito analítico, capacidade de aprendizagem contínua e gosto por inovação tecnológica.</p> 
-                    <!-- Botão que abre Modal -->
-                    <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#cvModal">
-                        Ver CV
-                    </button>
-                    <a href="assets/images/cv.pdf" download class="btn btn-outline-primary">Download CV</a>
+                    <p>Tenho um forte interesse em desenvolvimento web, inteligência artificial e aplicações interativas. Com espírito analítico, capacidade de aprendizagem contínua e gosto por inovação tecnológica.</p> 
+                    
+                    <!-- Seção de CVs com bandeiras -->
+                    <div class="cv-section mb-4">
+                        <h5 class="mb-3">Curriculum vitæ</h5>
+                        <div class="row g-3">
+                            <!-- CV Português -->
+                            <div class="col-md-6">
+                                <div class="card text-center h-100">
+                                    <div class="card-body">
+                                        <img src="https://flagcdn.com/w80/pt.png" alt="Bandeira Portugal" class="mb-2" style="width: 40px; height: auto;">
+                                        <h6 class="card-title">Português</h6>
+                                        <div class="d-grid gap-2">
+                                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#cvModalPT">
+                                                <i class="fas fa-eye me-1"></i> Ver CV
+                                            </button>
+                                            <a href="assets/images/CV_Bernardo_Silva_Português.pdf" download class="btn btn-outline-primary btn-sm">
+                                                <i class="fas fa-download me-1"></i> Download CV
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- CV Inglês -->
+                            <div class="col-md-6">
+                                <div class="card text-center h-100">
+                                    <div class="card-body">
+                                        <img src="https://flagcdn.com/w80/gb.png" alt="Bandeira Reino Unido" class="mb-2" style="width: 40px; height: auto;">
+                                        <h6 class="card-title">English</h6>
+                                        <div class="d-grid gap-2">
+                                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#cvModalEN">
+                                                <i class="fas fa-eye me-1"></i> View CV
+                                            </button>
+                                            <a href="assets/images/CV_Bernardo_Silva_English.pdf" download class="btn btn-outline-primary btn-sm">
+                                                <i class="fas fa-download me-1"></i> Download CV
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="card shadow-sm">
@@ -164,20 +201,49 @@
         </div>
     </section>
     
-    <!-- Modal para CV -->
-    <div class="modal fade" id="cvModal" tabindex="-1" aria-labelledby="cvModalLabel" aria-hidden="true">
+    <!-- Modal para CV Português -->
+    <div class="modal fade" id="cvModalPT" tabindex="-1" aria-labelledby="cvModalPTLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="cvModalLabel">Currículo Vitae</h5>
+                    <h5 class="modal-title" id="cvModalPTLabel">
+                        <img src="https://flagcdn.com/w20/pt.png" alt="PT" class="me-2">
+                        Curriculum vitæ - Português
+                    </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="assets/images/cv.png" alt="CV" class="img-fluid">
+                    <img src="assets/images/CV Português.png" alt="CV Português" class="img-fluid">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    <a href="assets/images/cv.pdf" download class="btn btn-primary">Download</a>
+                    <a href="assets/images/CV_Bernardo_Silva_Português.pdf" download class="btn btn-primary">
+                        <i class="fas fa-download me-1"></i> Download
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal para CV Inglês -->
+    <div class="modal fade" id="cvModalEN" tabindex="-1" aria-labelledby="cvModalENLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cvModalENLabel">
+                        <img src="https://flagcdn.com/w20/gb.png" alt="EN" class="me-2">
+                        Curriculum vitæ - English
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                                        <img src="assets/images/CV Inglês.png" alt="CV English" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="assets/images/CV_Bernardo_Silva_English.pdf" download class="btn btn-primary">
+                        <i class="fas fa-download me-1"></i> Download
+                    </a>
                 </div>
             </div>
         </div>
@@ -374,125 +440,123 @@
             });
         });
         
-// Modo escuro
-document.addEventListener('DOMContentLoaded', function() {
-    const darkModeToggle = document.getElementById('darkModeToggle');
-    if (darkModeToggle) {
-        // Verificar preferência salva
-        const savedDarkMode = localStorage.getItem('darkMode') === 'true';
-        
-        // Função para aplicar o modo escuro
-        function applyDarkMode() {
-            document.body.classList.add('dark-mode');
-            
-            // Ajustar cards e outros elementos
-            const cards = document.querySelectorAll('.card');
-            cards.forEach(card => {
-                card.style.backgroundColor = '#1e1e1e';
-                card.style.color = '#e0e0e0';
-                card.style.borderColor = '#333';
-            });
-            
-            // Ajustar accordion
-            const accordionItems = document.querySelectorAll('.accordion-item');
-            accordionItems.forEach(item => {
-                item.style.backgroundColor = '#1e1e1e';
-                item.style.color = '#e0e0e0';
-                item.style.borderColor = '#333';
-            });
-            
-            const accordionButtons = document.querySelectorAll('.accordion-button');
-            accordionButtons.forEach(button => {
-                button.style.backgroundColor = '#1e1e1e';
-                button.style.color = '#e0e0e0';
-            });
-            
-            // Ajustar seções com fundo claro
-            const lightSections = document.querySelectorAll('.bg-light');
-            lightSections.forEach(section => {
-                section.style.backgroundColor = '#1a1a1a';
-            });
-            
-            // Ajustar áreas de interesse (conhecimentos específicos)
-            const interestCards = document.querySelectorAll('.col-md-4 .card, .col-sm-6 .card');
-            interestCards.forEach(card => {
-                card.style.backgroundColor = '#1e1e1e';
-                card.style.color = '#e0e0e0';
-            });
-            
-            // Mudar ícone
-            const icon = darkModeToggle.querySelector('i');
-            if (icon) {
-                icon.classList.remove('fa-moon');
-                icon.classList.add('fa-sun');
-            }
-        }
-        
-        // Função para remover o modo escuro
-        function removeDarkMode() {
-            document.body.classList.remove('dark-mode');
-            
-            // Restaurar cards e outros elementos
-            const cards = document.querySelectorAll('.card');
-            cards.forEach(card => {
-                card.style.backgroundColor = '';
-                card.style.color = '';
-                card.style.borderColor = '';
-            });
-            
-            // Restaurar accordion
-            const accordionItems = document.querySelectorAll('.accordion-item');
-            accordionItems.forEach(item => {
-                item.style.backgroundColor = '';
-                item.style.color = '';
-                item.style.borderColor = '';
-            });
-            
-            const accordionButtons = document.querySelectorAll('.accordion-button');
-            accordionButtons.forEach(button => {
-                button.style.backgroundColor = '';
-                button.style.color = '';
-            });
-            
-            // Restaurar seções com fundo claro
-            const lightSections = document.querySelectorAll('.bg-light');
-            lightSections.forEach(section => {
-                section.style.backgroundColor = '';
-            });
-            
-            // Restaurar áreas de interesse
-            const interestCards = document.querySelectorAll('.col-md-4 .card, .col-sm-6 .card');
-            interestCards.forEach(card => {
-                card.style.backgroundColor = '';
-                card.style.color = '';
-            });
-            
-            // Mudar ícone
-            const icon = darkModeToggle.querySelector('i');
-            if (icon) {
-                icon.classList.remove('fa-sun');
-                icon.classList.add('fa-moon');
-            }
-        }
-        
-        // Aplicar modo escuro se estiver salvo
-        if (savedDarkMode) {
-            applyDarkMode();
-        }
-        
-        // Adicionar evento de clique
-        darkModeToggle.addEventListener('click', function() {
-            if (document.body.classList.contains('dark-mode')) {
-                removeDarkMode();
-                localStorage.setItem('darkMode', 'false');
-            } else {
-                applyDarkMode();
-                localStorage.setItem('darkMode', 'true');
+        // Modo escuro
+        document.addEventListener('DOMContentLoaded', function() {
+            const darkModeToggle = document.getElementById('darkModeToggle');
+            if (darkModeToggle) {
+                // Verificar preferência salva
+                const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+                
+                // Função para aplicar o modo escuro
+                function applyDarkMode() {
+                    document.body.classList.add('dark-mode');
+                    
+                    // Ajustar cards e outros elementos
+                    const cards = document.querySelectorAll('.card');
+                    cards.forEach(card => {
+                        card.style.backgroundColor = '#1e1e1e';
+                        card.style.color = '#e0e0e0';
+                        card.style.borderColor = '#333';
+                    });
+                    
+                    // Ajustar accordion
+                    const accordionItems = document.querySelectorAll('.accordion-item');
+                    accordionItems.forEach(item => {
+                        item.style.backgroundColor = '#1e1e1e';
+                        item.style.color = '#e0e0e0';
+                        item.style.borderColor = '#333';
+                    });
+                    
+                    const accordionButtons = document.querySelectorAll('.accordion-button');
+                    accordionButtons.forEach(button => {
+                        button.style.backgroundColor = '#1e1e1e';
+                        button.style.color = '#e0e0e0';
+                    });
+                    
+                    // Ajustar seções com fundo claro
+                    const lightSections = document.querySelectorAll('.bg-light');
+                    lightSections.forEach(section => {
+                        section.style.backgroundColor = '#1a1a1a';
+                    });
+                    
+                    // Ajustar áreas de interesse (conhecimentos específicos)
+                    const interestCards = document.querySelectorAll('.col-md-4 .card, .col-sm-6 .card');
+                    interestCards.forEach(card => {
+                        card.style.backgroundColor = '#1e1e1e';
+                        card.style.color = '#e0e0e0';
+                    });
+                    
+                    // Mudar ícone
+                    const icon = darkModeToggle.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('fa-moon');
+                        icon.classList.add('fa-sun');
+                    }
+                }
+                
+                // Função para remover o modo escuro
+                function removeDarkMode() {
+                    document.body.classList.remove('dark-mode');
+                    
+                    // Restaurar cards e outros elementos
+                    const cards = document.querySelectorAll('.card');
+                    cards.forEach(card => {
+                        card.style.backgroundColor = '';
+                        card.style.color = '';
+                        card.style.borderColor = '';
+                    });
+                    
+                    // Restaurar accordion
+                    const accordionItems = document.querySelectorAll('.accordion-item');
+                    accordionItems.forEach(item => {
+                        item.style.backgroundColor = '';
+                        item.style.color = '';
+                        item.style.borderColor = '';
+                    });
+                    
+                    const accordionButtons = document.querySelectorAll('.accordion-button');
+                    accordionButtons.forEach(button => {
+                        button.style.backgroundColor = '';
+                        button.style.color = '';
+                    });
+                    
+                    // Restaurar seções com fundo claro
+                    const lightSections = document.querySelectorAll('.bg-light');
+                    lightSections.forEach(section => {
+                        section.style.backgroundColor = '';
+                    });
+                    
+                    // Restaurar áreas de interesse
+                    const interestCards = document.querySelectorAll('.col-md-4 .card, .col-sm-6 .card');
+                    interestCards.forEach(card => {
+                        card.style.backgroundColor = '';
+                        card.style.color = '';
+                    });
+                    // Mudar ícone
+                    const icon = darkModeToggle.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('fa-sun');
+                        icon.classList.add('fa-moon');
+                    }
+                }
+                
+                // Aplicar modo escuro se estiver salvo
+                if (savedDarkMode) {
+                    applyDarkMode();
+                }
+                
+                // Adicionar evento de clique
+                darkModeToggle.addEventListener('click', function() {
+                    if (document.body.classList.contains('dark-mode')) {
+                        removeDarkMode();
+                        localStorage.setItem('darkMode', 'false');
+                    } else {
+                        applyDarkMode();
+                        localStorage.setItem('darkMode', 'true');
+                    }
+                });
             }
         });
-    }
-});
-
     </script>
 </body>
 </html>
