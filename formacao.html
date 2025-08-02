@@ -79,8 +79,7 @@
 <section class="py-5 bg-light">
     <div class="container">
         <h2 class="text-center mb-5">Certificados e Cursos Complementares</h2>
-        
-        <div class="row justify-content-center g-4">
+        <div class="row"> 
             <!-- Certificado de IA -->
             <div class="col-md-6 col-lg-4" data-aos="fade-up">
                 <div class="card h-100 border-0 shadow-sm certificate-card">
@@ -88,8 +87,8 @@
                         <div class="certificate-icon mb-3">
                             <i class="fas fa-robot fa-3x text-primary"></i>
                         </div>
-                        <h3 class="h4">Certificado em Inteligência Artificial</h3>
-                        <p class="text-primary mb-3">2025</p>
+                        <h3 class="h4">Certificado Workshop Inteligência Artificial</h3>
+                        <p class="text-primary mb-3">Março 2025</p>
                         <p>Participação num workshop da Google sobre aplicações práticas de IA.</p>
                         <button class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#certificadoIAModal">
                             <i class="fas fa-eye me-2"></i>Ver Certificado
@@ -97,30 +96,62 @@
                     </div>
                 </div>
             </div>
-        </div>
-        
+            <!-- Certificado Net Cisco -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                <div class="card h-100 border-0 shadow-sm certificate-card">
+                    <div class="card-body p-4">
+                        <div class="certificate-icon mb-3">
+                            <i class="fas fa-robot fa-3x text-primary"></i>
+                        </div>
+                        <h3 class="h4">Certificado Network Technician Career Path</h3>
+                        <p class="text-primary mb-3">Agosto 2025</p>
+                        <p>Certificado do curso Cisco Netacad, com exame de 40 perguntas.</p>
+                        <button class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#certificadoNetModal">
+                            <i class="fas fa-eye me-2"></i>Ver Certificado
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div> 
     </div>
 </section>
+
 
 <!-- Modal para Certificado de IA -->
 <div class="modal fade" id="certificadoIAModal" tabindex="-1" aria-labelledby="certificadoIAModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="certificadoIAModalLabel">Certificado - Inteligência Artificial</h5>
+                <h5 class="modal-title" id="certificadoIAModalLabel">Workshop Inteligência Artificial</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body text-center">
                 <img src="assets/images/certificado-ia-preview.jpg" alt="Certificado IA" class="img-fluid">
-                <!-- Se não tiver a imagem, pode usar um placeholder -->
-                <!-- <div class="p-5 bg-light text-center">
-                    <i class="fas fa-image fa-4x text-muted mb-3"></i>
-                    <p class="text-muted">Imagem do certificado não disponível</p>
-                </div> -->
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                 <a href="assets/docs/certificado_ia.pdf" download class="btn btn-primary">
+                    <i class="fas fa-download me-2"></i>Download
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para Certificado Net Cisco -->
+<div class="modal fade" id="certificadoNetModal" tabindex="-1" aria-labelledby="certificadoNetModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="certificadoNetModalLabel">Network Technician Career Path</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="assets/images/Bernardo_Silva_NetworkTechnicianCareerPath20250802-preview.JPG" alt="Network Technician Career Path" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <a href="assets/docs/Bernardo_Silva_NetworkTechnicianCareerPath20250802.pdf" download class="btn btn-primary">
                     <i class="fas fa-download me-2"></i>Download
                 </a>
             </div>
