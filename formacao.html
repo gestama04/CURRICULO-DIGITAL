@@ -80,6 +80,24 @@
     <div class="container">
         <h2 class="text-center mb-5">Certificados e Cursos Complementares</h2>
         <div class="row"> 
+
+            <!-- Certificado de Web Apache -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                <div class="card h-100 border-0 shadow-sm certificate-card">
+                    <div class="card-body p-4">
+                        <div class="certificate-icon mb-3">
+                            <i class="fas fa-globe fa-3x text-primary"></i>
+                        </div>
+                        <h3 class="h4">Certificado - Servidores Web (IIS, Apache e Nginx)</h3>
+                        <p class="text-primary mb-3">Outubro 2025</p>
+                        <p>Recode & CDI Portugal</p>
+                        <button class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#certificadoApacheModal">
+                            <i class="fas fa-eye me-2"></i>Ver Certificado
+                        </button>
+                    </div>
+                </div>
+            </div>
+
             <!-- Certificado de HTML -->
             <div class="col-md-6 col-lg-4" data-aos="fade-up">
                 <div class="card h-100 border-0 shadow-sm certificate-card">
@@ -96,22 +114,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Certificado de IA -->
-            <div class="col-md-6 col-lg-4" data-aos="fade-up">
-                <div class="card h-100 border-0 shadow-sm certificate-card">
-                    <div class="card-body p-4">
-                        <div class="certificate-icon mb-3">
-                            <i class="fas fa-robot fa-3x text-primary"></i>
-                        </div>
-                        <h3 class="h4">Certificado - Google Impulso IA</h3>
-                        <p class="text-primary mb-3">Março 2025</p>
-                        <p>Participação num workshop da Google sobre aplicações práticas de IA.</p>
-                        <button class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#certificadoIAModal">
-                            <i class="fas fa-eye me-2"></i>Ver Certificado
-                        </button>
-                    </div>
-                </div>
-            </div>
+            
             <!-- Certificado Net Cisco -->
             <div class="col-md-6 col-lg-4" data-aos="fade-up">
                 <div class="card h-100 border-0 shadow-sm certificate-card">
@@ -144,9 +147,46 @@
                     </div>
                 </div>
             </div>
+            <!-- Certificado de IA -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                <div class="card h-100 border-0 shadow-sm certificate-card">
+                    <div class="card-body p-4">
+                        <div class="certificate-icon mb-3">
+                            <i class="fas fa-robot fa-3x text-primary"></i>
+                        </div>
+                        <h3 class="h4">Certificado - Google Impulso IA</h3>
+                        <p class="text-primary mb-3">Março 2025</p>
+                        <p>Participação num workshop da Google sobre aplicações práticas de IA.</p>
+                        <button class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#certificadoIAModal">
+                            <i class="fas fa-eye me-2"></i>Ver Certificado
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div> 
     </div>
 </section>
+
+<!-- Modal para Certificado Web Apache -->
+<div class="modal fade" id="certificadoApacheModal" tabindex="-1" aria-labelledby="certificadoApacheModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="certificadoApacheModalLabel">Servidores Web (IIS, Apache e Nginx)</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="assets/images/certificado-web-preview.jpg" alt="Certificado - Servidores Web (IIS, Apache e Nginx)" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <a href="assets/docs/Servidores_Web_(IIS,_Apache_e_Nginx)-Certificado_Servidores_Web_4845.pdf" download class="btn btn-primary">
+                    <i class="fas fa-download me-2"></i>Download
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Modal para Certificado HTML -->
 <div class="modal fade" id="certificadoREModal" tabindex="-1" aria-labelledby="certificadoREModalLabel" aria-hidden="true">
