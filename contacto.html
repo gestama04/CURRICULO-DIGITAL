@@ -138,32 +138,32 @@
                     <h2 class="display-6 fw-bold mb-4">Envie uma Mensagem</h2>
                     <p class="lead form-description mb-4">Preencha o formulário abaixo e entrarei em contato o mais breve possível.</p>
                     
-                    <form id="contactForm" class="needs-validation" novalidate>
+                    <form id="contactForm" action="https://formspree.io/f/xbdrjlnd" method="POST" class="needs-validation" novalidate>
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <label for="name" class="form-label">Nome</label>
-                                <input type="text" class="form-control" id="name" required>
+                                <input type="text" class="form-control" id="name" name="name" required>
                                 <div class="invalid-feedback">
                                     Por favor, coloque o seu nome.
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" required>
+                                <input type="email" class="form-control" id="email" name="email" required>
                                 <div class="invalid-feedback">
                                     Por favor, coloque um email válido.
                                 </div>
                             </div>
                             <div class="col-12">
                                 <label for="subject" class="form-label">Assunto</label>
-                                <input type="text" class="form-control" id="subject" required>
+                                <input type="text" class="form-control" id="subject" name="subject" required>
                                 <div class="invalid-feedback">
                                     Por favor, coloque o assunto.
                                 </div>
                             </div>
                             <div class="col-12">
                                 <label for="message" class="form-label">Mensagem</label>
-                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                                 <div class="invalid-feedback">
                                     Por favor, escreva a sua mensagem.
                                 </div>
@@ -236,23 +236,14 @@
         (function() {
             'use strict';
             
-            // Fetch all forms to apply validation
             var forms = document.querySelectorAll('.needs-validation');
             
-            // Loop over them and prevent submission
             Array.prototype.slice.call(forms).forEach(function(form) {
                 form.addEventListener('submit', function(event) {
                     if (!form.checkValidity()) {
                         event.preventDefault();
                         event.stopPropagation();
-                    } else {
-                        event.preventDefault();
-                        // Aqui você adicionaria o código para enviar o formulário via AJAX
-                        // Por enquanto, apenas mostramos um alerta
-                        alert('Mensagem enviada com sucesso! Obrigado pelo contato.');
-                        form.reset();
                     }
-                    
                     form.classList.add('was-validated');
                 }, false);
             });
