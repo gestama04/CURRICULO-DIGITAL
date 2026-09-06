@@ -1,580 +1,218 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en" data-bs-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Bernardo Silva - Engenheiro de Software | Portfólio</title>
-    
-    <meta name="description" content="Portfólio de Bernardo Silva, Software Engineer e Web Lead. Desenvolvimento Web, Mobile com React Native, TypeScript, Bootstrap, JavaScript, Cloud e Redes/Telecomunicações.">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
-    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
-    <meta name="theme-color" content="#0d6efd">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-    <meta name="google-site-verification" content="Bm3Mib-scnZ_pSyGlN7yWn2DV9jDdJaAnsw9Xy8bwAw" />
-
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <title>Bernardo Silva | Software Engineer &amp; Web Lead</title>
+  <meta name="description" content="Portfolio of Bernardo Silva, Software Engineer and Web Lead specialising in React Native, TypeScript, production web platforms, cloud-backed systems, AI integrations, testing, and infrastructure.">
+  <meta name="author" content="Bernardo Silva">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bernardosilvacurriculodigital.pt/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:title" content="Bernardo Silva | Software Engineer &amp; Web Lead">
+  <meta property="og:description" content="Mobile applications, production web platforms, cloud-backed systems, and AI-assisted digital products.">
+  <meta property="og:url" content="https://bernardosilvacurriculodigital.pt/">
+  <meta property="og:image" content="https://bernardosilvacurriculodigital.pt/assets/images/profile.jpg">
+  <meta property="og:image:alt" content="Bernardo Silva digital portfolio">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <meta name="theme-color" content="#07111f">
+  <meta name="google-site-verification" content="Bm3Mib-scnZ_pSyGlN7yWn2DV9jDdJaAnsw9Xy8bwAw">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Manrope:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/core.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/readability.css">
 </head>
 <body>
-    <!-- Barra de progresso de leitura -->
-    <div class="reading-progress-container">
-        <div class="reading-progress-bar" id="readingProgressBar"></div>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="reading-progress" aria-hidden="true"><span id="readingProgressBar"></span></div>
+
+  <nav class="navbar navbar-expand-lg fixed-top portfolio-nav" aria-label="Main navigation">
+    <div class="container-fluid nav-shell">
+      <a class="navbar-brand" href="index.html">
+        <span class="brand-name">Bernardo Silva</span>
+        <small>Digital Portfolio</small>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Open menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto ms-lg-4 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="experiencias.html"><i class="fa-solid fa-layer-group"></i> Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="competencias.html"><i class="fa-solid fa-code"></i> Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="formacao.html"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html"><i class="fa-regular fa-message"></i> Contact</a></li>
+        </ul>
+        <div class="nav-tools">
+          <a href="https://github.com/gestama04" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/eng-bernardo-silva" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <button id="themeToggle" class="theme-toggle" data-theme-toggle type="button" aria-label="Switch to light mode" aria-pressed="true"><i class="fa-solid fa-sun"></i></button>
+          <a class="nav-avatar" href="#profile" aria-label="Go to profile"><img src="assets/images/profile.jpg" alt="" width="44" height="44"></a>
+        </div>
+      </div>
     </div>
-  
-    <!-- Navbar Bootstrap -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Currículo Digital</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item ms-lg-3">
-                        <button id="darkModeToggle" class="btn btn-outline-light btn-sm rounded-circle">
-                          <i class="fas fa-moon"></i>
-                        </button>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="competencias.html">Competências</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="formacao.html">Formação</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="experiencias.html">Experiência</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-                <!-- Relógio em tempo real -->
-                <div class="ms-3 text-light" id="clock"></div>
-            </div>
-        </div>
-    </nav>
-    
-    <!-- Carousel/Slideshow Automático -->
-    <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="5000">
-                <img src="assets/images/banner1.jpg" class="d-block w-100" alt="Banner 1" style="height: 400px; object-fit: cover;">
-                <div class="carousel-caption">
-                    <h2>Bernardo Silva</h2>
-                    <p>Software Engineer</p>
-                    <a href="competencias.html" class="btn btn-primary">Ver Competências</a>
-                </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="5000">
-                <img src="assets/images/banner2.jpg" class="d-block w-100" alt="Banner 2" style="height: 400px; object-fit: cover;">
-                <div class="carousel-caption">
-                    <h2>Formação Académica</h2>
-                    <p>Conheça a minha trajetória</p>
-                    <a href="formacao.html" class="btn btn-primary">Ver Formação</a>
-                </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="5000">
-                <img src="assets/images/banner3.jpg" class="d-block w-100" alt="Banner 3" style="height: 400px; object-fit: cover;">
-                <div class="carousel-caption">
-                    <h2>Experiência Profissional</h2>
-                    <p>Experiência Profissional e Projetos Desenvolvidos</p>
-                    <a href="experiencias.html" class="btn btn-primary">Ver Experiência</a>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Próximo</span>
-        </button>
-    </div>
-    
-    <!-- Cabeçalho -->
-    <header class="py-5 bg-light">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-4 text-center">
-                    <img src="assets/images/profile.jpg" alt="Minha foto" class="img-fluid rounded-circle mb-3" style="max-width: 200px;">
-                    <h1 class="display-5">Bernardo Silva</h1>
-                    <p class="lead">Currículo Digital</p>
-                    <div class="social-links mb-3">
-                        <a href="https://www.linkedin.com/in/bernardo-silva-031a51339/" target="_blank" class="btn btn-outline-primary me-2"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/gestama04" target="_blank" class="btn btn-outline-dark me-2"><i class="fab fa-github"></i></a>
-                        <a href="mailto:benigestama@gmail.com" class="btn btn-outline-danger"><i class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="p-4 bg-white rounded shadow">
-                        <h2 class="h4 mb-3">Software Engineer | Web Lead | React Native</h2>
-<p>Engenheiro de Software licenciado em Engenharia Informática e Telecomunicações, focado em desenvolvimento Web e Mobile.</p>
-<p>Na EUC Inovação Portugal, lidero o desenvolvimento dos websites institucionais da empresa, trabalhando com HTML, CSS, JavaScript, Bootstrap e Wix.</p>
-<p>Também desenvolvo aplicações mobile em React Native e TypeScript, incluindo projetos próprios como a VitaStreak.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    
-    <!-- Apresentação Pessoal com Alerta -->
-    <section class="py-5">
-        <div class="container">
-            <div class="alert alert-info alert-dismissible fade show mb-4" role="alert">
-                <strong>Novidade!</strong> Currículo atualizado em Abril de 2026.
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-            
-            <h2 class="display-6 mb-4">Sobre Mim</h2>
-            <div class="row">
-                <div class="col-lg-8">
-                    <p class="lead">Atualmente, atuo como Software Engineer e Web Lead na EUC Inovação Portugal. Lidero os projetos Web da empresa, incluindo websites institucionais como <a href="https://www.eucinovacaoportugal.com" target="_blank">https://www.eucinovacaoportugal.com</a> e <a href="https://www.eurounionconsult.com" target="_blank">https://www.eurounionconsult.com</a>.</p>
+  </nav>
 
-<p class="lead">Trabalho com HTML, CSS, JavaScript, Bootstrap e Wix, criando plataformas responsivas, otimizadas e alinhadas com a identidade visual das marcas.</p>
-
-<p class="lead">Também desenvolvo interfaces mobile em React Native e TypeScript, com foco em usabilidade, consistência visual e experiências digitais intuitivas.</p>
-
-<p class="lead">As minhas áreas de atuação incluem:</p>
-
-<p class="lead">🌐 Web Development: criação e manutenção de websites institucionais, responsivos e otimizados.</p>
-<p class="lead">🚀 Mobile Development: desenvolvimento de aplicações com React Native e TypeScript.</p>
-<p class="lead">☁️ Integração & Redes: integração de APIs REST, cloud e conhecimentos sólidos em redes e telecomunicações.</p>
-                    <!-- Seção de CVs com bandeiras -->
-                    <div class="cv-section mb-4">
-                        <h5 class="mb-3">Curriculum vitæ</h5>
-                        <div class="row g-3">
-                            <!-- CV Português -->
-                            <div class="col-md-6">
-                                <div class="card text-center h-100">
-                                    <div class="card-body">
-                                        <img src="https://flagcdn.com/w80/pt.png" alt="Bandeira Portugal" class="mb-2" style="width: 40px; height: auto;">
-                                        <h6 class="card-title">Português</h6>
-                                        <div class="d-grid gap-2">
-                                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#cvModalPT">
-                                                <i class="fas fa-eye me-1"></i> Ver CV
-                                            </button>
-                                            <a href="assets/images/CV_Bernardo_Silva_Português.pdf" download class="btn btn-outline-primary btn-sm">
-                                                <i class="fas fa-download me-1"></i> Download CV
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- CV Inglês -->
-                            <div class="col-md-6">
-                                <div class="card text-center h-100">
-                                    <div class="card-body">
-                                        <img src="https://flagcdn.com/w80/gb.png" alt="Bandeira Reino Unido" class="mb-2" style="width: 40px; height: auto;">
-                                        <h6 class="card-title">English</h6>
-                                        <div class="d-grid gap-2">
-                                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#cvModalEN">
-                                                <i class="fas fa-eye me-1"></i> View CV
-                                            </button>
-                                            <a href="assets/images/CV_Bernardo_Silva_English.pdf" download class="btn btn-outline-primary btn-sm">
-                                                <i class="fas fa-download me-1"></i> Download CV
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card shadow-sm">
-                        <div class="card-header bg-primary text-white">
-                            <i class="fas fa-user me-2"></i> Informações Pessoais
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><i class="fas fa-graduation-cap me-2"></i> Engenharia Informática e Telecomunicações</li>
-                            <li class="list-group-item"><i class="fas fa-map-marker-alt me-2"></i> Lamego, Portugal</li>
-                            <li class="list-group-item"><i class="fas fa-envelope me-2"></i> benigestama@gmail.com</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <main id="content">
+    <section class="cinema-hero">
+      <div class="hero-backdrop" aria-hidden="true">
+        <img src="assets/images/profile.jpg" alt="">
+      </div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <div class="container-fluid hero-shell">
+        <div class="hero-content">
+          <p class="hero-label"><i class="fa-solid fa-circle-check"></i> Software Engineer &amp; Web Lead</p>
+          <h1>Bernardo<br>Silva</h1>
+          <p class="hero-meta"><strong>Mobile</strong><span>Web</span><span>Cloud</span><span>AI Integration</span></p>
+          <p class="hero-description">I build mobile applications, production web platforms, and cloud-backed systems with React Native, TypeScript, Supabase, PostgreSQL, and modern web technologies.</p>
+          <div class="hero-actions">
+            <a class="watch-button" href="experiencias.html"><i class="fa-solid fa-play"></i><span>Explore projects</span></a>
+            <a class="round-button" href="#featured" aria-label="View featured work"><i class="fa-solid fa-plus"></i></a>
+            <a class="round-button" href="#profile" aria-label="About Bernardo Silva"><i class="fa-solid fa-info"></i></a>
+          </div>
+          <p class="hero-note"><i class="fa-solid fa-circle-check"></i> Published application on Google Play</p>
         </div>
+      </div>
+      <a class="hero-scroll" href="#featured" aria-label="Scroll to featured projects"><i class="fa-solid fa-chevron-down"></i></a>
     </section>
-    
-    <!-- Modal para CV Português -->
-    <div class="modal fade" id="cvModalPT" tabindex="-1" aria-labelledby="cvModalPTLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="cvModalPTLabel">
-                        <img src="https://flagcdn.com/w20/pt.png" alt="PT" class="me-2">
-                        Curriculum vitæ - Português
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="assets/images/CV_Bernardo_Silva_Português.png" alt="CV Português" class="img-fluid">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    <a href="assets/images/CV_Bernardo_Silva_Português.pdf" download class="btn btn-primary">
-                        <i class="fas fa-download me-1"></i> Download
-                    </a>
-                </div>
-            </div>
+
+    <section class="catalog-section first-catalog" id="featured">
+      <div class="container-fluid page-shell">
+        <div class="row-heading">
+          <div><p>Featured work</p><h2>Projects worth opening</h2></div>
+          <a href="experiencias.html">See all <i class="fa-solid fa-chevron-right"></i></a>
         </div>
-    </div>
-    
-    <!-- Modal para CV Inglês -->
-    <div class="modal fade" id="cvModalEN" tabindex="-1" aria-labelledby="cvModalENLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="cvModalENLabel">
-                        <img src="https://flagcdn.com/w20/gb.png" alt="EN" class="me-2">
-                        Curriculum vitæ - English
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                                        <img src="assets/images/CV_Bernardo_Silva_English.png" alt="CV English" class="img-fluid">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <a href="assets/images/CV_Bernardo_Silva_English.pdf" download class="btn btn-primary">
-                        <i class="fas fa-download me-1"></i> Download
-                    </a>
-                </div>
+
+        <div class="featured-row">
+          <article class="feature-tile feature-vita">
+            <img src="assets/images/icon.png" alt="VitaStreak mobile application preview" loading="lazy">
+            <div class="tile-shade"></div>
+            <div class="tile-content">
+              <span class="rank"><i class="fa-solid fa-arrow-trend-up"></i> Published</span>
+              <h3>VitaStreak</h3>
+              <p>Supplement routine management with secure authentication, notifications, adherence tracking, and AI-assisted label recognition.</p>
+              <div class="tile-buttons">
+                <a href="https://play.google.com/store/apps/details?id=com.gestama.vitastreak&amp;hl=en_US" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-google-play"></i> Google Play</a>
+                <a href="https://github.com/gestama04/VitaStreak" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+              </div>
             </div>
-        </div>
-    </div>
-    
-    <!-- Destaques com Cards Bootstrap -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <h2 class="display-6 mb-4">Destaques</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center">
-                            <div class="mb-3">
-                                <i class="fas fa-laptop-code fa-3x text-primary"></i>
-                            </div>
-                            <h3 class="card-title h5">Competências</h3>
-                            <p class="card-text">Linguagens de programação, habilidades analíticas, habilidades interpessoais...</p>
-                        </div>
-                        <div class="card-footer bg-transparent border-0 text-center">
-                            <a href="competencias.html" class="btn btn-outline-primary">Ver mais</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center">
-                            <div class="mb-3">
-                                <i class="fas fa-graduation-cap fa-3x text-primary"></i>
-                            </div>
-                            <h3 class="card-title h5">Formação</h3>
-                            <p class="card-text"></p>
-                            <p class="card-text">Cursos e Certificações</p>
-                        </div>
-                        <div class="card-footer bg-transparent border-0 text-center">
-                            <a href="formacao.html" class="btn btn-outline-primary">Ver mais</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center">
-                            <div class="mb-3">
-                                <i class="fas fa-briefcase fa-3x text-primary"></i>
-                            </div>
-                            <h3 class="card-title h5">Experiência</h3>
-                            <p class="card-text"></p>
-                            <p class="card-text">Experiência Profissional e Projetos</p>
-                        </div>
-                        <div class="card-footer bg-transparent border-0 text-center">
-                            <a href="experiencias.html" class="btn btn-outline-primary">Ver mais</a>
-                        </div>
-                    </div>
-                </div>
+          </article>
+
+          <article class="feature-tile feature-mindguess">
+            <img src="assets/images/MindGuess.png" alt="MindGuess preview" loading="lazy">
+            <div class="tile-shade"></div>
+            <div class="tile-content">
+              <span class="rank development"><i class="fa-solid fa-code-branch"></i> In development</span>
+              <h3>MindGuess</h3>
+              <p>Probabilistic inference engine using entropy and information gain, supported by 75 automated tests.</p>
+              <div class="tile-buttons"><a href="https://github.com/gestama04/MindGuess" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Repository</a></div>
             </div>
+          </article>
+
+          <article class="feature-tile feature-inventory">
+            <img src="assets/images/logo.png" alt="AI-Powered Inventory preview" loading="lazy">
+            <div class="tile-shade"></div>
+            <div class="tile-content">
+              <span class="rank academic"><i class="fa-solid fa-graduation-cap"></i> Academic capstone</span>
+              <h3>AI-Powered Inventory</h3>
+              <p>Image-based product identification and structured extraction with Google Gemini, reaching over 99% accuracy in the evaluated test set.</p>
+              <div class="tile-buttons"><a href="https://github.com/gestama04/My-Inventory" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Repository</a></div>
+            </div>
+          </article>
         </div>
+      </div>
     </section>
-    
-    <!-- Menu Interativo com Dropdown -->
-    <section class="py-5">
-        <div class="container">
-            <h2 class="display-6 mb-4">Áreas de Atuação</h2>
-            
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <div class="accordion" id="interestAccordion">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <i class="fas fa-code me-2"></i> Desenvolvimento de Software
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#interestAccordion">
-                                <div class="accordion-body">
-                                    <p>Desenvolvimento de soluções Web e Mobile com foco em performance, experiência do utilizador e design responsivo. Experiência prática em websites institucionais, aplicações mobile e integração com APIs.</p>
-                                    <div class="d-flex flex-wrap">
-                                        <span class="badge bg-primary me-2 mb-2">HTML</span>
-<span class="badge bg-primary me-2 mb-2">CSS</span>
-<span class="badge bg-primary me-2 mb-2">JavaScript</span>
-<span class="badge bg-primary me-2 mb-2">Bootstrap</span>
-<span class="badge bg-primary me-2 mb-2">React Native</span>
-<span class="badge bg-primary me-2 mb-2">TypeScript</span>
-<span class="badge bg-primary me-2 mb-2">Python</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <i class="fas fa-network-wired me-2"></i> Redes e Telecomunicações
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#interestAccordion">
-                                <div class="accordion-body">
-                                    <p>Gestão e compreensão profunda da infraestrutura digital moderna. Competências certificadas pela Cisco em protocolos de comunicação, segurança de redes e implementação de tecnologias sem fios (5G).</p>
-                                    <div class="d-flex flex-wrap">
-                                        <span class="badge bg-success me-2 mb-2">Redes IP</span>
-                                        <span class="badge bg-success me-2 mb-2">Protocolos TCP/IP</span>
-                                        <span class="badge bg-success me-2 mb-2">Cibersegurança</span>
-                                        <span class="badge bg-success me-2 mb-2">5G</span>
-                                        <span class="badge bg-success me-2 mb-2">IoT</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <i class="fas fa-cloud me-2"></i> Cloud Computing
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#interestAccordion">
-                                <div class="accordion-body">
-                                    <p>Implementação e orquestração de arquiteturas em nuvem para otimizar o ciclo de vida do desenvolvimento. Experiência prática na integração de serviços geridos e bases de dados na Cloud.</p>
-                                    <div class="d-flex flex-wrap">
-                                        <span class="badge bg-info text-dark me-2 mb-2">Microsoft Azure</span>
-                                        <span class="badge bg-info text-dark me-2 mb-2">Docker</span>
-                                        <span class="badge bg-info text-dark me-2 mb-2">SQL</span>
-                                        <span class="badge bg-info text-dark me-2 mb-2">DevOps</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+    <section class="catalog-section" id="profile">
+      <div class="container-fluid page-shell">
+        <div class="row-heading"><div><p>Professional profile</p><h2>From interface to production</h2></div></div>
+        <div class="profile-banner">
+          <div class="profile-copy">
+            <span class="profile-badge"><i class="fa-solid fa-briefcase"></i> Current role · Nov 2025 to present</span>
+            <h3>Software Engineer &amp; Web Lead</h3>
+            <h4>EUC Inovação Portugal</h4>
+            <p>I develop and maintain institutional platforms, implement responsive features, manage domains and hosting, configure DNS and SSL/HTTPS, support deployments, and contribute to React Native interfaces and backend integrations.</p>
+            <a class="detail-button" href="experiencias.html"><i class="fa-solid fa-list"></i> Full experience</a>
+          </div>
+          <div class="profile-categories">
+            <article><i class="fa-solid fa-code"></i><span><strong>Web development</strong><small>Platforms, features, quality</small></span></article>
+            <article><i class="fa-solid fa-server"></i><span><strong>Infrastructure</strong><small>DNS, SSL, hosting, deployment</small></span></article>
+            <article><i class="fa-solid fa-mobile-screen"></i><span><strong>Mobile interfaces</strong><small>React Native, TypeScript</small></span></article>
+            <article><i class="fa-solid fa-database"></i><span><strong>Data &amp; APIs</strong><small>PostgreSQL, REST, Python</small></span></article>
+          </div>
         </div>
+      </div>
     </section>
-    
-    <!-- Rodapé -->
-    <footer class="py-4 bg-dark text-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <h5>Bernardo Silva</h5>
-                    <p class="small mb-0">Engenharia Informática e Telecomunicações</p>
-                    <p class="small mb-0">ESTGL - Instituto Politécnico de Viseu</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <div class="social-links mb-2">
-                        <a href="https://www.linkedin.com/in/bernardo-silva-031a51339/" target="_blank" class="text-white me-3"><i class="fab fa-linkedin fa-lg"></i></a>
-                        <a href="https://github.com/gestama04" target="_blank" class="text-white me-3"><i class="fab fa-github fa-lg"></i></a>
-                        <a href="mailto:benigestama@gmail.com" class="text-white"><i class="fas fa-envelope fa-lg"></i></a>
-                    </div>
-                    <p class="mb-0">&copy; 2025 Bernardo Silva. Todos os direitos reservados.</p>
-                </div>
-            </div>
+
+    <section class="catalog-section">
+      <div class="container-fluid page-shell">
+        <div class="row-heading"><div><p>Production platforms</p><h2>Live on the web</h2></div></div>
+        <div class="landscape-row">
+          <a class="landscape-card" href="https://www.eucinovacaoportugal.com/" target="_blank" rel="noopener noreferrer">
+            <div class="site-art site-art-euc"><i class="fa-solid fa-building"></i></div>
+            <span><small>Institutional website</small><strong>EUC Inovação Portugal</strong></span><i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+          <a class="landscape-card" href="https://www.eurounionconsult.com/" target="_blank" rel="noopener noreferrer">
+            <div class="site-art site-art-euro"><i class="fa-solid fa-earth-europe"></i></div>
+            <span><small>Corporate website</small><strong>Euro Union Consult</strong></span><i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
         </div>
-    </footer>
-    
-    <!-- Botão Voltar ao Topo -->
-    <button id="backToTop" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-    
-    <!-- Bootstrap JS Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Custom JS -->
-    <script>
-        // Relógio em tempo real
-        function updateClock() {
-            const now = new Date();
-            const timeString = now.toLocaleTimeString();
-            document.getElementById('clock').textContent = timeString;
-        }
-        setInterval(updateClock, 1000);
-        updateClock();
-        
-        // Barra de progresso de leitura
-        window.addEventListener('scroll', function() {
-            const windowHeight = window.innerHeight;
-            const documentHeight = document.documentElement.scrollHeight - windowHeight;
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            const scrollPercentage = (scrollTop / documentHeight) * 100;
-            
-            const progressBar = document.getElementById('readingProgressBar');
-            if (progressBar) {
-                progressBar.style.width = scrollPercentage + '%';
-            }
-        });
-        
-        // Botão voltar ao topo
-        const backToTopButton = document.getElementById('backToTop');
-        
-        window.addEventListener('scroll', function() {
-            if (window.pageYOffset > 300) {
-                backToTopButton.classList.add('visible');
-            } else {
-                backToTopButton.classList.remove('visible');
-            }
-        });
-        
-        backToTopButton.addEventListener('click', function() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-        
-        // Modo escuro
-        document.addEventListener('DOMContentLoaded', function() {
-            const darkModeToggle = document.getElementById('darkModeToggle');
-            if (darkModeToggle) {
-                // Verificar preferência salva
-                const savedDarkMode = localStorage.getItem('darkMode') === 'true';
-                
-                // Função para aplicar o modo escuro
-                function applyDarkMode() {
-                    document.body.classList.add('dark-mode');
-                    
-                    // Ajustar cards e outros elementos
-                    const cards = document.querySelectorAll('.card');
-                    cards.forEach(card => {
-                        card.style.backgroundColor = '#1e1e1e';
-                        card.style.color = '#e0e0e0';
-                        card.style.borderColor = '#333';
-                    });
-                    
-                    // Ajustar accordion
-                    const accordionItems = document.querySelectorAll('.accordion-item');
-                    accordionItems.forEach(item => {
-                        item.style.backgroundColor = '#1e1e1e';
-                        item.style.color = '#e0e0e0';
-                        item.style.borderColor = '#333';
-                    });
-                    
-                    const accordionButtons = document.querySelectorAll('.accordion-button');
-                    accordionButtons.forEach(button => {
-                        button.style.backgroundColor = '#1e1e1e';
-                        button.style.color = '#e0e0e0';
-                    });
-                    
-                    // Ajustar seções com fundo claro
-                    const lightSections = document.querySelectorAll('.bg-light');
-                    lightSections.forEach(section => {
-                        section.style.backgroundColor = '#1a1a1a';
-                    });
-                    
-                    // Ajustar áreas de atuação (conhecimentos específicos)
-                    const interestCards = document.querySelectorAll('.col-md-4 .card, .col-sm-6 .card');
-                    interestCards.forEach(card => {
-                        card.style.backgroundColor = '#1e1e1e';
-                        card.style.color = '#e0e0e0';
-                    });
-                    
-                    // Mudar ícone
-                    const icon = darkModeToggle.querySelector('i');
-                    if (icon) {
-                        icon.classList.remove('fa-moon');
-                        icon.classList.add('fa-sun');
-                    }
-                }
-                
-                // Função para remover o modo escuro
-                function removeDarkMode() {
-                    document.body.classList.remove('dark-mode');
-                    
-                    // Restaurar cards e outros elementos
-                    const cards = document.querySelectorAll('.card');
-                    cards.forEach(card => {
-                        card.style.backgroundColor = '';
-                        card.style.color = '';
-                        card.style.borderColor = '';
-                    });
-                    
-                    // Restaurar accordion
-                    const accordionItems = document.querySelectorAll('.accordion-item');
-                    accordionItems.forEach(item => {
-                        item.style.backgroundColor = '';
-                        item.style.color = '';
-                        item.style.borderColor = '';
-                    });
-                    
-                    const accordionButtons = document.querySelectorAll('.accordion-button');
-                    accordionButtons.forEach(button => {
-                        button.style.backgroundColor = '';
-                        button.style.color = '';
-                    });
-                    
-                    // Restaurar seções com fundo claro
-                    const lightSections = document.querySelectorAll('.bg-light');
-                    lightSections.forEach(section => {
-                        section.style.backgroundColor = '';
-                    });
-                    
-                    // Restaurar áreas de atuação
-                    const interestCards = document.querySelectorAll('.col-md-4 .card, .col-sm-6 .card');
-                    interestCards.forEach(card => {
-                        card.style.backgroundColor = '';
-                        card.style.color = '';
-                    });
-                    // Mudar ícone
-                    const icon = darkModeToggle.querySelector('i');
-                    if (icon) {
-                        icon.classList.remove('fa-sun');
-                        icon.classList.add('fa-moon');
-                    }
-                }
-                
-                // Aplicar modo escuro se estiver salvo
-                if (savedDarkMode) {
-                    applyDarkMode();
-                }
-                
-                // Adicionar evento de clique
-                darkModeToggle.addEventListener('click', function() {
-                    if (document.body.classList.contains('dark-mode')) {
-                        removeDarkMode();
-                        localStorage.setItem('darkMode', 'false');
-                    } else {
-                        applyDarkMode();
-                        localStorage.setItem('darkMode', 'true');
-                    }
-                });
-            }
-        });
-    </script>
+      </div>
+    </section>
+
+    <section class="catalog-section">
+      <div class="container-fluid page-shell">
+        <div class="row-heading"><div><p>Technical areas</p><h2>Built with</h2></div><a href="competencias.html">All skills <i class="fa-solid fa-chevron-right"></i></a></div>
+        <div class="skill-row">
+          <a href="competencias.html"><i class="fa-brands fa-react"></i><span><strong>Mobile &amp; Frontend</strong><small>React Native · Expo · TypeScript</small></span></a>
+          <a href="competencias.html"><i class="fa-solid fa-database"></i><span><strong>Backend &amp; Data</strong><small>Supabase · PostgreSQL · Firebase</small></span></a>
+          <a href="competencias.html"><i class="fa-solid fa-wand-magic-sparkles"></i><span><strong>AI Integration</strong><small>Gemini API · Structured outputs</small></span></a>
+          <a href="competencias.html"><i class="fa-solid fa-shield-halved"></i><span><strong>Testing &amp; Infrastructure</strong><small>Automation · Docker · DNS · SSL</small></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog-section cv-section" id="cv">
+      <div class="container-fluid page-shell">
+        <div class="row-heading"><div><p>Curriculum vitae</p><h2>Choose a language</h2></div></div>
+        <div class="cv-row">
+          <a href="assets/docs/CV_Bernardo_Silva_Português.pdf" target="_blank" rel="noopener noreferrer"><img src="assets/images/flag-pt.png" alt="" width="90" height="60"><span><small>Portuguese</small><strong>Curriculum Vitae</strong></span><i class="fa-regular fa-file-pdf"></i></a>
+          <a href="assets/docs/CV_Bernardo_Silva_English.pdf" target="_blank" rel="noopener noreferrer"><img src="assets/images/flag-en.png" alt="" width="90" height="60"><span><small>English</small><strong>Curriculum Vitae</strong></span><i class="fa-regular fa-file-pdf"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-feature">
+      <div class="container-fluid page-shell contact-feature-inner">
+        <div><p>Ready for the next conversation</p><h2>Have an opportunity or project in mind?</h2></div>
+        <div><a class="watch-button" href="mailto:benigestama@gmail.com"><i class="fa-regular fa-envelope"></i> Send an email</a><a class="round-button" href="contacto.html" aria-label="Open contact page"><i class="fa-regular fa-message"></i></a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container-fluid page-shell footer-grid">
+      <div><strong>Bernardo Silva</strong><p>Software Engineer &amp; Web Lead</p></div>
+      <div class="footer-links"><a href="experiencias.html">Projects</a><a href="competencias.html">Skills</a><a href="formacao.html">Education</a><a href="contacto.html">Contact</a></div>
+      <p>© <span id="currentYear"></span></p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/core.js"></script>
 </body>
 </html>
-

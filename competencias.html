@@ -1,998 +1,157 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en" data-bs-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Competências Técnicas - Bernardo Silva | Web/Software Dev & Redes/Telecomunicações</title>
-    
-    <meta name="description" content="Consulte as competências técnicas de Bernardo Silva. Especialista em JavaScript, React, Redes IP e Telecomunicações ITED/ITUR. Gráficos de proficiência em Engenharia de Software.">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
-    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
-    <meta name="theme-color" content="#0d6efd">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <title>Skills &amp; Technical Expertise | Bernardo Silva</title>
+  <meta name="description" content="Technical expertise of Bernardo Silva across React Native, TypeScript, Supabase, PostgreSQL, AI integration, automated testing, web infrastructure, and software engineering.">
+  <meta name="author" content="Bernardo Silva">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bernardosilvacurriculodigital.pt/competencias.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:title" content="Skills &amp; Technical Expertise | Bernardo Silva">
+  <meta property="og:description" content="Technologies applied to mobile products, web platforms, cloud-backed systems, AI integrations, testing, and production infrastructure.">
+  <meta property="og:url" content="https://bernardosilvacurriculodigital.pt/competencias.html">
+  <meta property="og:image" content="https://bernardosilvacurriculodigital.pt/assets/images/profile.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" href="assets/favicon/favicon.ico">
+  <meta name="theme-color" content="#07111f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Manrope:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/core.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/readability.css">
 </head>
 <body>
-    <!-- Barra de progresso de leitura -->
-    <div class="reading-progress-container">
-        <div class="reading-progress-bar" id="readingProgressBar"></div>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="reading-progress" aria-hidden="true"><span id="readingProgressBar"></span></div>
+
+  <nav class="navbar navbar-expand-lg fixed-top portfolio-nav" aria-label="Main navigation">
+    <div class="container-fluid nav-shell">
+      <a class="navbar-brand" href="index.html"><span class="brand-name">Bernardo Silva</span><small>Digital Portfolio</small></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Open menu"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto ms-lg-4 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="experiencias.html"><i class="fa-solid fa-layer-group"></i> Projects</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="competencias.html"><i class="fa-solid fa-code"></i> Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="formacao.html"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html"><i class="fa-regular fa-message"></i> Contact</a></li>
+        </ul>
+        <div class="nav-tools">
+          <a href="https://github.com/gestama04" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/eng-bernardo-silva" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <button id="themeToggle" class="theme-toggle" data-theme-toggle type="button" aria-label="Switch to light mode" aria-pressed="true"><i class="fa-solid fa-sun"></i></button>
+          <a class="nav-avatar" href="index.html" aria-label="Homepage"><img src="assets/images/profile.jpg" alt="" width="44" height="44"></a>
+        </div>
+      </div>
     </div>
- 
-    <!-- Navbar Bootstrap -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Currículo Digital</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item ms-lg-3">
-                        <button id="darkModeToggle" class="btn btn-outline-light btn-sm rounded-circle">
-                          <i class="fas fa-moon"></i>
-                        </button>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="competencias.html">Competências</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="formacao.html">Formação</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="experiencias.html">Experiência</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+  </nav>
+
+  <main id="content">
+    <header class="skills-hero">
+      <div class="hero-code" aria-hidden="true"><span>&lt;build&gt;</span><span>const product = ship();</span><span>tests: 75 passing</span><span>deploy --production</span></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="container-fluid page-shell hero-content">
+        <p class="hero-label"><i class="fa-solid fa-code"></i> Skills &amp; Technical Expertise</p>
+        <h1>Tools chosen for<br><span>real product work.</span></h1>
+        <p>Technologies supported by a published application, production platforms, tested software, implemented integrations, and practical engineering experience.</p>
+        <div class="hero-actions">
+          <a class="watch-button" href="#core-skills"><i class="fa-solid fa-play"></i> Explore the stack</a>
+          <a class="round-button" href="experiencias.html" aria-label="View projects"><i class="fa-solid fa-layer-group"></i></a>
         </div>
-    </nav>
-   
-    <!-- Cabeçalho da Página -->
-    <header class="py-5 header-section">
-        <div class="container text-center">
-            <div class="py-4 px-4 rounded header-box text-white">
-                <h1 class="display-4 fw-bold">Competências</h1>
-                <p class="lead mb-0">Conhecimentos técnicos e habilidades profissionais</p>
-                <div class="mt-3">
-                    <i class="fas fa-code fa-2x mx-2"></i>
-                    <i class="fas fa-laptop-code fa-2x mx-2"></i>
-                    <i class="fas fa-network-wired fa-2x mx-2"></i>
-                </div>
-            </div>
-        </div>
+        <div class="hero-stack"><span><i class="fa-brands fa-react"></i> React Native</span><span><i class="fa-brands fa-js"></i> TypeScript</span><span><i class="fa-solid fa-database"></i> Supabase</span><span><i class="fa-solid fa-wand-magic-sparkles"></i> Gemini API</span></div>
+      </div>
     </header>
 
-    <!-- Habilidades Técnicas com Accordion e Gráficos Chart.js -->
-    <section class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Habilidades Técnicas</h2>
-           
-            <!-- Accordion para Linguagens de Programação -->
-            <div class="accordion mb-5" id="accordionSkills">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <i class="fas fa-code me-2"></i> Linguagens de programação
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionSkills">
-                        <div class="accordion-body">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <!-- Gráfico de radar para linguagens de programação -->
-                                    <div class="chart-container" style="position: relative; height:300px; width:100%">
-                                        <canvas id="programmingLanguagesChart"></canvas>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mb-4">
-                                        <div class="d-flex justify-content-between mb-1">
-                                            <span>Python</span>
-                                            <span>85%</span>
-                                        </div>
-                                        <div class="progress-bar-wrap">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                   
-                                    <div class="mb-4">
-                                        <div class="d-flex justify-content-between mb-1">
-                                            <span>Java</span>
-                                            <span>75%</span>
-                                        </div>
-                                        <div class="progress-bar-wrap">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                   
-                                    <div class="mb-4">
-                                        <div class="d-flex justify-content-between mb-1">
-                                            <span>HTML</span>
-                                            <span>90%</span>
-                                        </div>
-                                        <div class="progress-bar-wrap">
-                                            <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
+    <section class="catalog-section core-section" id="core-skills">
+      <div class="container-fluid page-shell">
+        <div class="row-heading"><div><p>Core technical domains</p><h2>My primary engineering stack</h2></div><a href="experiencias.html">Applied in projects <i class="fa-solid fa-chevron-right"></i></a></div>
+        <div class="domain-grid">
+          <article class="domain-card domain-mobile">
+            <div class="domain-art"><i class="fa-brands fa-react"></i><span>01</span></div>
+            <div class="domain-content"><p class="domain-label">Core specialisation</p><h3>Mobile &amp; Frontend</h3><p>Cross-platform applications and responsive interfaces, including navigation, reusable components, notifications, builds, and user-facing product flows.</p><ul><li>React Native</li><li>Expo</li><li>Expo Router</li><li>React</li><li>TypeScript</li><li>JavaScript</li><li>HTML5</li><li>CSS3</li><li>Bootstrap</li></ul><div class="proof"><i class="fa-brands fa-google-play"></i><span><strong>Published product</strong> VitaStreak is available on Google Play.</span></div></div>
+          </article>
 
-                                    <div class="mb-4">
-                                        <div class="d-flex justify-content-between mb-1">
-                                            <span>TypeScript</span>
-                                            <span>90%</span>
-                                        </div>
-                                        <div class="progress-bar-wrap">
-                                            <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
+          <article class="domain-card domain-data">
+            <div class="domain-art"><i class="fa-solid fa-database"></i><span>02</span></div>
+            <div class="domain-content"><p class="domain-label">Cloud-backed applications</p><h3>Backend &amp; Data</h3><p>Authentication, relational data, access policies, serverless functions, file services, data modelling, and external integrations.</p><ul><li>Node.js</li><li>Supabase</li><li>PostgreSQL</li><li>Authentication</li><li>Row Level Security</li><li>Edge Functions</li><li>Firebase</li><li>REST APIs</li><li>Python</li><li>Flask</li></ul><div class="proof"><i class="fa-solid fa-cloud"></i><span><strong>Implemented workflows</strong> Used across mobile products and professional integrations.</span></div></div>
+          </article>
 
+          <article class="domain-card domain-ai">
+            <div class="domain-art"><i class="fa-solid fa-wand-magic-sparkles"></i><span>03</span></div>
+            <div class="domain-content"><p class="domain-label">Applied integration</p><h3>AI &amp; Structured Data</h3><p>AI-assisted features focused on image-based recognition, structured extraction, validation, secure access, and useful product workflows.</p><ul><li>Google Gemini API</li><li>Structured Outputs</li><li>Image Recognition</li><li>Data Extraction</li><li>Secure API Integration</li></ul><div class="proof"><i class="fa-solid fa-camera"></i><span><strong>Two product integrations</strong> Gemini powers features in VitaStreak and AI-Powered Inventory.</span></div></div>
+          </article>
 
-                                    <div class="mb-4">
-                                        <div class="d-flex justify-content-between mb-1">
-                                            <span>JavaScript</span>
-                                            <span>85%</span>
-                                        </div>
-                                        <div class="progress-bar-wrap">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                   
-                                    <div class="mb-4">
-                                        <div class="d-flex justify-content-between mb-1">
-                                            <span>C</span>
-                                            <span>70%</span>
-                                        </div>
-                                        <div class="progress-bar-wrap">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="mb-4">
-                                        <div class="d-flex justify-content-between mb-1">
-                                            <span>SQL</span>
-                                            <span>65%</span>
-                                        </div>
-                                        <div class="progress-bar-wrap">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-               
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            <i class="fas fa-layer-group me-2"></i> Frameworks, Bibliotecas e Ferramentas
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionSkills">
-                        <div class="accordion-body">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <!-- Gráfico de barras para frameworks -->
-                                    <div class="chart-container" style="position: relative; height:300px; width:100%">
-                                        <canvas id="frameworksChart"></canvas>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="row text-center">
-                                        <div class="col-md-4 mb-3">
-                                            <div class="p-3 border rounded">
-                                                <i class="fab fa-react fa-3x text-info mb-3"></i>
-                                                <h5>React</h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 mb-3">
-                                            <div class="p-3 border rounded">
-                                                <i class="fab fa-bootstrap fa-3x text-purple mb-3"></i>
-                                                <h5>Bootstrap</h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 mb-3">
-                                            <div class="p-3 border rounded">
-                                                <i class="fab fa-node-js fa-3x text-success mb-3"></i>
-                                                <h5>Node.js</h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 mb-3">
-                                            <div class="p-3 border rounded">
-                                                <i class="fab fa-docker fa-3x text-primary mb-3"></i>
-                                                <h5>Docker</h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 mb-3">
-                                            <div class="p-3 border rounded">
-                                                <i class="fab fa-python fa-3x text-warning mb-3"></i>
-                                                <h5>NumPy</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-               
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            <i class="fas fa-calculator me-2"></i> Matemática
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSkills">
-                        <div class="accordion-body">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <!-- Gráfico de pizza para matemática -->
-                                    <div class="chart-container" style="position: relative; height:300px; width:100%">
-                                        <canvas id="mathChart"></canvas>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mb-4">
-                                        <div class="d-flex justify-content-between mb-1">
-                                            <span>Álgebra</span>
-                                            <span>90%</span>
-                                        </div>
-                                        <div class="progress-bar-wrap">
-                                            <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                   
-                                    <div class="mb-4">
-                                        <div class="d-flex justify-content-between mb-1">
-                                            <span>Análise Matemática</span>
-                                            <span>90%</span>
-                                        </div>
-                                        <div class="progress-bar-wrap">
-                                            <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                   
-                                    <div class="mb-4">
-                                        <div class="d-flex justify-content-between mb-1">
-                                            <span>Matemática Aplicada</span>
-                                            <span>80%</span>
-                                        </div>
-                                        <div class="progress-bar-wrap">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                   
-                                    <div class="mb-4">
-                                        <div class="d-flex justify-content-between mb-1">
-                                            <span>Investigação Operacional</span>
-                                            <span>80%</span>
-                                        </div>
-                                        <div class="progress-bar-wrap">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-               
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            <i class="fas fa-broadcast-tower me-2"></i> Redes e Telecomunicações
-                        </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionSkills">
-                        <div class="accordion-body">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <!-- Gráfico de linha para telecomunicações -->
-                                    <div class="chart-container" style="position: relative; height:300px; width:100%">
-                                        <canvas id="telecomChart"></canvas>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mb-4">
-                                        <div class="d-flex justify-content-between mb-1">
-                                            <span>ITED/ITUR</span>
-                                            <span>80%</span>
-                                        </div>
-                                        <div class="progress-bar-wrap">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                   
-                                    <div class="mb-4">
-                                        <div class="d-flex justify-content-between mb-1">
-                                            <span>Redes IP</span>
-                                            <span>90%</span>
-                                        </div>
-                                        <div class="progress-bar-wrap">
-                                            <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                   
-                                    <div class="mb-4">
-                                        <div class="d-flex justify-content-between mb-1">
-                                            <span>Sistemas de Comunicação</span>
-                                            <span>80%</span>
-                                        </div>
-                                        <div class="progress-bar-wrap">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                   
-                                    <div class="mb-4">
-                                        <div class="d-flex justify-content-between mb-1">
-                                            <span>Antenas e Propagação</span>
-                                            <span>90%</span>
-                                        </div>
-                                        <div class="progress-bar-wrap">
-                                            <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-           
-            <!-- Conhecimentos Específicos -->
-            <h3 class="mt-5 mb-4">Conhecimentos Específicos</h3>
-            <div class="row g-3 text-center">
-                <div class="col-md-4 col-sm-6">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <i class="fas fa-network-wired fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title">Infraestruturas de Redes</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <i class="fas fa-broadcast-tower fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title">Sistemas de Radiodifusão</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <i class="fas fa-satellite-dish fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title">Comunicações via Satélite</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <i class="fas fa-signal fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title">Processamento de Sinais</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <i class="fas fa-project-diagram fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title">Modelagem de Sistemas</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <i class="fas fa-calculator fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title">Cálculo Numérico</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <article class="domain-card domain-ops">
+            <div class="domain-art"><i class="fa-solid fa-shield-halved"></i><span>04</span></div>
+            <div class="domain-content"><p class="domain-label">Reliability &amp; operations</p><h3>Testing, Tooling &amp; Infrastructure</h3><p>Runtime validation, automated testing, modular repositories, source control, web operations, and reliable production delivery.</p><ul><li>Automated Testing</li><li>Node.js Test Runner</li><li>Zod</li><li>npm Workspaces</li><li>Git</li><li>GitHub</li><li>Docker</li><li>DNS</li><li>SSL/HTTPS</li><li>Hosting</li><li>Deployments</li></ul><div class="proof"><i class="fa-solid fa-vial-circle-check"></i><span><strong>75 automated tests</strong> Reproducible validation and simulations in MindGuess.</span></div></div>
+          </article>
         </div>
+      </div>
     </section>
-   
-    <!-- Habilidades Interpessoais -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Habilidades Interpessoais</h2>
-           
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="fas fa-users fa-3x text-primary mb-3"></i>
-                            <h3 class="h5">Trabalho em Equipa</h3>
-                            <p class="card-text">Capacidade de colaborar eficientemente, compartilhar ideias e contribuir para objetivos comuns.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="fas fa-comments fa-3x text-primary mb-3"></i>
-                            <h3 class="h5">Comunicação</h3>
-                            <p class="card-text">Habilidade de expressar ideias claramente e ouvir ativamente os outros.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="fas fa-tasks fa-3x text-primary mb-3"></i>
-                            <h3 class="h5">Organização</h3>
-                            <p class="card-text">Capacidade de gerir múltiplas tarefas e manter projetos organizados dentro do prazo.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-   
-    <!-- Idiomas com Tabs -->
-    <section class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Idiomas</h2>
-           
-            <ul class="nav nav-tabs mb-4 justify-content-center" id="languageTabs" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="portuguese-tab" data-bs-toggle="tab" data-bs-target="#portuguese" type="button" role="tab" aria-controls="portuguese" aria-selected="true">Português</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="english-tab" data-bs-toggle="tab" data-bs-target="#english" type="button" role="tab" aria-controls="english" aria-selected="false">Inglês</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="spanish-tab" data-bs-toggle="tab" data-bs-target="#spanish" type="button" role="tab" aria-controls="spanish" aria-selected="false">Espanhol</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="french-tab" data-bs-toggle="tab" data-bs-target="#french" type="button" role="tab" aria-controls="french" aria-selected="false">Francês</button>
-                </li>
-            </ul>
-           
-            <div class="tab-content" id="languageTabsContent">
-                <div class="tab-pane fade show active" id="portuguese" role="tabpanel" aria-labelledby="portuguese-tab">
-                    <div class="row align-items-center">
-                        <div class="col-md-3 text-center">
-                            <img src="assets/images/flag-pt.png" alt="Português" class="img-fluid mb-3" style="max-width: 100px;">
-                        </div>
-                        <div class="col-md-9">
-                            <h4>Português</h4>
-                            <p class="lead">Nativo</p>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar bg-info" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <p class="mt-3">Língua materna com domínio completo em leitura, escrita, compreensão e expressão oral.</p>
-                        </div>
-                    </div>
-                </div>
-               
-                <div class="tab-pane fade" id="english" role="tabpanel" aria-labelledby="english-tab">
-                    <div class="row align-items-center">
-                        <div class="col-md-3 text-center">
-                            <img src="assets/images/flag-en.png" alt="Inglês" class="img-fluid mb-3" style="max-width: 100px;">
-                        </div>
-                        <div class="col-md-9">
-                            <h4>Inglês</h4>
-                            <p class="lead">B2 - Intermédio-Avançado</p>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <p class="mt-3">Capaz de utilizar a língua com fluência, eficácia e espontaneidade na maioria das situações, incluindo contextos profissionais e académicos.</p>
-                        </div>
-                    </div>
-                </div>
-               
-                <div class="tab-pane fade" id="spanish" role="tabpanel" aria-labelledby="spanish-tab">
-                    <div class="row align-items-center">
-                        <div class="col-md-3 text-center">
-                            <img src="assets/images/flag-es.png" alt="Espanhol" class="img-fluid mb-3" style="max-width: 100px;">
-                        </div>
-                        <div class="col-md-9">
-                            <h4>Espanhol</h4>
-                            <p class="lead">B2 - Intermédio-Avançado</p>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <p class="mt-3">Capaz de utilizar a língua com fluência, eficácia e espontaneidade na maioria das situações, incluindo contextos profissionais e académicos.</p>
-                        </div>
-                    </div>
-                </div>
-               
-                <div class="tab-pane fade" id="french" role="tabpanel" aria-labelledby="french-tab">
-                    <div class="row align-items-center">
-                        <div class="col-md-3 text-center">
-                            <img src="assets/images/flag-fr.png" alt="Francês" class="img-fluid mb-3" style="max-width: 100px;">
-                        </div>
-                        <div class="col-md-9">
-                            <h4>Francês</h4>
-                            <p class="lead">A2 - Básico</p>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <p class="mt-3">Capaz de compreender frases isoladas e expressões frequentes relacionadas com áreas de prioridade imediata. Pode comunicar-se em tarefas simples e em rotinas que exigem apenas uma troca de informação simples e direta.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-   
-    <!-- Rodapé -->
-    <footer class="py-4 bg-dark text-white">
-        <div class="container text-center">
-            <p class="mb-0">&copy; 2025 Bernardo Silva. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-   
-    <!-- Bootstrap JS Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-   
-    <!-- Script para inicializar os gráficos Chart.js -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Configurações de cores
-            const chartColors = {
-                primary: '#0d6efd',
-                success: '#198754',
-                info: '#0dcaf0',
-                warning: '#ffc107',
-                danger: '#dc3545',
-                purple: '#6f42c1',
-                pink: '#d63384',
-                orange: '#fd7e14',
-                teal: '#20c997'
-            };
-            
-            // Configuração para o modo escuro
-            const darkModeColors = {
-                gridColor: 'rgba(255, 255, 255, 0.1)',
-                textColor: '#e0e0e0'
-            };
-            
-            const lightModeColors = {
-                gridColor: 'rgba(0, 0, 0, 0.1)',
-                textColor: '#666'
-            };
-            
-            // Verificar se o modo escuro está ativo
-            const isDarkMode = document.body.classList.contains('dark-mode');
-            const modeColors = isDarkMode ? darkModeColors : lightModeColors;
-            
-            // Configuração global para todos os gráficos
-            Chart.defaults.font.family = "'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif";
-            Chart.defaults.font.size = 14;
-            Chart.defaults.color = modeColors.textColor;
-            
-            // 1. Gráfico de Radar para Linguagens de Programação
-            const programmingCtx = document.getElementById('programmingLanguagesChart').getContext('2d');
-            const programmingChart = new Chart(programmingCtx, {
-                type: 'radar',
-                data: {
-                    labels: ['Python', 'Java', 'HTML','TypeScript', 'JavaScript', 'C', 'SQL'],
-                    datasets: [{
-                        label: 'Nível de Proficiência',
-                        data: [85, 75, 90, 90, 85, 70, 65],
-                        backgroundColor: 'rgba(13, 110, 253, 0.2)',
-                        borderColor: chartColors.primary,
-                        pointBackgroundColor: chartColors.primary,
-                        pointBorderColor: '#fff',
-                        pointHoverBackgroundColor: '#fff',
-                        pointHoverBorderColor: chartColors.primary
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    scales: {
-                        r: {
-                            angleLines: {
-                                color: modeColors.gridColor
-                            },
-                            grid: {
-                                color: modeColors.gridColor
-                            },
-                            pointLabels: {
-                                color: modeColors.textColor
-                            },
-                            ticks: {
-                                backdropColor: 'transparent',
-                                color: modeColors.textColor
-                            },
-                            min:50,
-                            max:100,
-                        }
-                    },
-                    plugins: {
-                        legend: {
-                            display: true,
-                            position: 'top',
-                            labels: {
-                                color: modeColors.textColor
-                            }
-                        },
-                        tooltip: {
-                            callbacks: {
-                                label: function(context) {
-                                    return context.dataset.label + ': ' + context.raw + '%';
-                                }
-                            }
-                        }
-                    }
-                }
-            });
-            
-            // 2. Gráfico de Barras para Frameworks
-            const frameworksCtx = document.getElementById('frameworksChart').getContext('2d');
-            const frameworksChart = new Chart(frameworksCtx, {
-                type: 'bar',
-                data: {
-                    labels: ['React', 'Bootstrap', 'Node.js', 'Docker','NumPy'],
-                    datasets: [{
-                        label: 'Nível de Proficiência',
-                        data: [85, 85, 70, 85, 75],
-                        backgroundColor: [
-                            chartColors.primary,
-                            chartColors.purple,
-                            chartColors.success,
-                            chartColors.info,
-                            chartColors.teal
-                        ],
-                        borderColor: [
-                            chartColors.primary,
-                            chartColors.purple,
-                            chartColors.success,
-                            chartColors.info,
-                            chartColors.teal
-                        ],
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    scales: {
-                        y: {
-                            beginAtZero: true,
-                            max: 100,
-                            grid: {
-                                color: modeColors.gridColor
-                            },
-                            ticks: {
-                                color: modeColors.textColor
-                            }
-                        },
-                        x: {
-                            grid: {
-                                color: modeColors.gridColor
-                            },
-                            ticks: {
-                                color: modeColors.textColor
-                            }
-                        }
-                    },
-                    plugins: {
-                        legend: {
-                            display: false
-                        },
-                        tooltip: {
-                            callbacks: {
-                                label: function(context) {
-                                    return context.dataset.label + ': ' + context.raw + '%';
-                                }
-                            }
-                        }
-                    }
-                }
-            });
-            
-            // 3. Gráfico de Pizza para Matemática
-            const mathCtx = document.getElementById('mathChart').getContext('2d');
-            const mathChart = new Chart(mathCtx, {
-                type: 'pie',
-                data: {
-                    labels: ['Álgebra', 'Análise Matemática', 'Matemática Aplicada', 'Investigação Operacional'],
-                    datasets: [{
-                        data: [90, 90, 80, 80],
-                        backgroundColor: [
-                            chartColors.primary,
-                            chartColors.success,
-                            chartColors.warning,
-                            chartColors.info
-                        ],
-                        borderColor: [
-                            chartColors.primary,
-                            chartColors.success,
-                            chartColors.warning,
-                            chartColors.info
-                        ],
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: {
-                            position: 'right',
-                            labels: {
-                                color: modeColors.textColor
-                            }
-                        },
-                        tooltip: {
-                            callbacks: {
-                                label: function(context) {
-                                    return context.label + ': ' + context.raw + '%';
-                                }
-                            }
-                        }
-                    }
-                }
-            });
-            
-            // 4. Gráfico de Linha para Telecomunicações
-            const telecomCtx = document.getElementById('telecomChart').getContext('2d');
-            const telecomChart = new Chart(telecomCtx, {
-                type: 'line',
-                data: {
-                    labels: ['ITED/ITUR', 'Redes IP', 'Sistemas de Comunicação', 'Antenas e Propagação'],
-                    datasets: [{
-                        label: 'Nível de Proficiência',
-                        data: [80, 90, 80, 90],
-                        fill: true,
-                        backgroundColor: 'rgba(13, 110, 253, 0.2)',
-                        borderColor: chartColors.primary,
-                        tension: 0.4,
-                        pointBackgroundColor: chartColors.primary,
-                        pointBorderColor: '#fff',
-                        pointRadius: 5,
-                        pointHoverRadius: 7
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    scales: {
-                        y: {
-                            min: 50,
-                            max: 100,
-                            grid: {
-                                color: modeColors.gridColor
-                            },
-                            ticks: {
-                                color: modeColors.textColor
-                            }
-                        },
-                        x: {
-                            grid: {
-                                color: modeColors.gridColor
-                            },
-                            ticks: {
-                                color: modeColors.textColor
-                            }
-                        }
-                    },
-                    plugins: {
-                        legend: {
-                            display: true,
-                            labels: {
-                                color: modeColors.textColor
-                            }
-                        },
-                        tooltip: {
-                            callbacks: {
-                                label: function(context) {
-                                    return context.dataset.label + ': ' + context.raw + '%';
-                                }
-                            }
-                        }
-                    }
-                }
-            });
-            
-            // Atualizar gráficos quando o modo escuro for alternado
-            const darkModeToggle = document.getElementById('darkModeToggle');
-            if (darkModeToggle) {
-                darkModeToggle.addEventListener('click', function() {
-                    // Aguardar um momento para que as classes sejam atualizadas
-                    setTimeout(function() {
-                        const isDarkMode = document.body.classList.contains('dark-mode');
-                        const modeColors = isDarkMode ? darkModeColors : lightModeColors;
-                        
-                        // Atualizar cores dos gráficos
-                        updateChartColors(programmingChart, modeColors);
-                        updateChartColors(frameworksChart, modeColors);
-                        updateChartColors(mathChart, modeColors);
-                        updateChartColors(telecomChart, modeColors);
-                    }, 100);
-                });
-            }
-            
-            // Função para atualizar cores dos gráficos
-            function updateChartColors(chart, modeColors) {
-                if (!chart) return;
-                
-                // Atualizar cores de texto
-                chart.options.plugins.legend.labels.color = modeColors.textColor;
-                
-                // Atualizar cores de grade
-                if (chart.options.scales) {
-                    if (chart.options.scales.r) {
-                        chart.options.scales.r.grid.color = modeColors.gridColor;
-                        chart.options.scales.r.angleLines.color = modeColors.gridColor;
-                        chart.options.scales.r.pointLabels.color = modeColors.textColor;
-                    }
-                    
-                    if (chart.options.scales.x) {
-                        chart.options.scales.x.grid.color = modeColors.gridColor;
-                        chart.options.scales.x.ticks.color = modeColors.textColor;
-                    }
-                    
-                    if (chart.options.scales.y) {
-                        chart.options.scales.y.grid.color = modeColors.gridColor;
-                        chart.options.scales.y.ticks.color = modeColors.textColor;
-                    }
-                }
-                
-                chart.update();
-            }
-        });
-    </script>
-    
-    <!-- Script para barra de progresso de leitura e modo escuro -->
-    <script>
-        // Barra de progresso de leitura
-        window.addEventListener('scroll', function() {
-            const windowHeight = window.innerHeight;
-            const documentHeight = document.documentElement.scrollHeight - windowHeight;
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            const scrollPercentage = (scrollTop / documentHeight) * 100;
-           
-            const progressBar = document.getElementById('readingProgressBar');
-            if (progressBar) {
-                progressBar.style.width = scrollPercentage + '%';
-            }
-        });
 
-        document.addEventListener('DOMContentLoaded', function() {
-    const darkModeToggle = document.getElementById('darkModeToggle');
-    
-    // Verificar preferência salva
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-    
-    // Aplicar modo escuro
-    function applyDarkMode() {
-        document.body.classList.add('dark-mode');
-        
-        // Ajustar cards e outros elementos
-        const cards = document.querySelectorAll('.card');
-        cards.forEach(card => {
-            card.style.backgroundColor = '#1e1e1e';
-            card.style.color = '#e0e0e0';
-            card.style.borderColor = '#333';
-        });
-        
-        // Ajustar accordion
-        const accordionItems = document.querySelectorAll('.accordion-item');
-        accordionItems.forEach(item => {
-            item.style.backgroundColor = '#1e1e1e';
-            item.style.color = '#e0e0e0';
-            item.style.borderColor = '#333';
-        });
-        
-        const accordionButtons = document.querySelectorAll('.accordion-button');
-        accordionButtons.forEach(button => {
-            button.style.backgroundColor = '#1e1e1e';
-            button.style.color = '#e0e0e0';
-        });
-        
-        // Ajustar seções com fundo claro
-        const lightSections = document.querySelectorAll('.bg-light');
-        lightSections.forEach(section => {
-            section.style.backgroundColor = '#1a1a1a';
-        });
-        
-        // Mudar ícone
-        const icon = darkModeToggle.querySelector('i');
-        if (icon) {
-            icon.classList.remove('fa-moon');
-            icon.classList.add('fa-sun');
-        }
-    }
-    
-    // Remover estilos de modo escuro
-    function removeDarkMode() {
-        document.body.classList.remove('dark-mode');
-        
-        // Restaurar todos os cards para o estilo padrão
-        const cards = document.querySelectorAll('.card');
-        cards.forEach(card => {
-            card.style.backgroundColor = '';
-            card.style.color = '';
-            card.style.borderColor = '';
-        });
-        
-        // Restaurar accordion
-        const accordionItems = document.querySelectorAll('.accordion-item');
-        accordionItems.forEach(item => {
-            item.style.backgroundColor = '';
-            item.style.color = '';
-            item.style.borderColor = '';
-        });
-        
-        const accordionButtons = document.querySelectorAll('.accordion-button');
-        accordionButtons.forEach(button => {
-            button.style.backgroundColor = '';
-            button.style.color = '';
-        });
-        
-        // Restaurar seções com fundo claro
-        const lightSections = document.querySelectorAll('.bg-light');
-        lightSections.forEach(section => {
-            section.style.backgroundColor = '';
-        });
-        
-        // Mudar ícone
-        const icon = darkModeToggle.querySelector('i');
-        if (icon) {
-            icon.classList.remove('fa-sun');
-            icon.classList.add('fa-moon');
-        }
-    }
-    
-    // Aplicar modo escuro se estiver salvo
-    if (isDarkMode) {
-        applyDarkMode();
-    }
-    
-    // Adicionar evento de clique
-    if (darkModeToggle) {
-        darkModeToggle.addEventListener('click', function() {
-            if (document.body.classList.contains('dark-mode')) {
-                removeDarkMode();
-                localStorage.setItem('darkMode', 'false');
-            } else {
-                applyDarkMode();
-                localStorage.setItem('darkMode', 'true');
-            }
-        });
-    }
-});
+    <section class="catalog-section evidence-section">
+      <div class="container-fluid page-shell">
+        <div class="row-heading"><div><p>Evidence in practice</p><h2>Where these skills are used</h2></div></div>
+        <div class="evidence-row">
+          <a href="https://play.google.com/store/apps/details?id=com.gestama.vitastreak&amp;hl=en_US" target="_blank" rel="noopener noreferrer"><span class="evidence-icon play"><i class="fa-brands fa-google-play"></i></span><span><small>Published application</small><strong>VitaStreak</strong><em>Mobile · Cloud · AI</em></span><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="https://github.com/gestama04/MindGuess" target="_blank" rel="noopener noreferrer"><span class="evidence-icon mind"><i class="fa-solid fa-brain"></i></span><span><small>Tested inference engine</small><strong>MindGuess</strong><em>Probability · Validation · Tooling</em></span><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="experiencias.html#professional"><span class="evidence-icon work"><i class="fa-solid fa-briefcase"></i></span><span><small>Professional experience</small><strong>EUC Inovação Portugal</strong><em>Web · Infrastructure · Data</em></span><i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+      </div>
+    </section>
 
-    </script>
-    
-    <style>
-        /* Estilo para o header */
-        .header-section {
-            background-color: #ffffff;
-        }
-        
-        .header-box {
-            background-color: #212529;
-        }
-        
-        .dark-mode .header-section {
-            background-color: #121212 !important;
-        }
-        
-        .dark-mode .header-box {
-            background-color: #3a3a3a;
-        }
-    </style>
+    <section class="catalog-section process-section">
+      <div class="container-fluid page-shell">
+        <div class="row-heading"><div><p>Engineering approach</p><h2>From requirement to verified result</h2></div></div>
+        <ol class="process-row">
+          <li><span>01</span><i class="fa-solid fa-crosshairs"></i><div><strong>Understand</strong><p>Translate the objective into clear requirements, constraints, and expected outcomes.</p></div></li>
+          <li><span>02</span><i class="fa-solid fa-diagram-project"></i><div><strong>Structure</strong><p>Separate interface, data, application logic, integrations, and operational concerns.</p></div></li>
+          <li><span>03</span><i class="fa-solid fa-code"></i><div><strong>Implement</strong><p>Build in small, readable, reversible steps with clear source control history.</p></div></li>
+          <li><span>04</span><i class="fa-solid fa-circle-check"></i><div><strong>Validate</strong><p>Run type checks, automated tests, simulations, manual review, and production checks.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="catalog-section foundations-section">
+      <div class="container-fluid page-shell">
+        <div class="row-heading"><div><p>Engineering foundations</p><h2>Broader technical background</h2></div></div>
+        <div class="foundation-grid">
+          <article><span class="foundation-icon"><i class="fa-solid fa-terminal"></i></span><h3>Programming</h3><p>Python, Java, C, SQL, algorithms, OOP, and distributed systems.</p><div><span>Python</span><span>Java</span><span>C</span><span>SQL</span></div></article>
+          <article><span class="foundation-icon"><i class="fa-solid fa-network-wired"></i></span><h3>Networks &amp; Security</h3><p>TCP/IP, network services, troubleshooting, web servers, and cybersecurity.</p><div><span>TCP/IP</span><span>Security</span><span>Servers</span></div></article>
+          <article><span class="foundation-icon"><i class="fa-solid fa-tower-broadcast"></i></span><h3>Telecommunications</h3><p>5G, IoT, Bluetooth, wireless systems, and ITED/ITUR foundations.</p><div><span>5G</span><span>IoT</span><span>ITED/ITUR</span></div></article>
+          <article><span class="foundation-icon"><i class="fa-solid fa-microchip"></i></span><h3>Hardware</h3><p>Arduino, servomotors, ultrasonic sensing, DHT11, and Bluetooth modules.</p><div><span>Arduino</span><span>Sensors</span><span>HC-06</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog-section language-section">
+      <div class="container-fluid page-shell">
+        <div class="row-heading"><div><p>Communication</p><h2>Languages</h2></div></div>
+        <div class="language-row">
+          <article><span class="language-symbol">PT</span><div><strong>Portuguese</strong><small>Native</small></div><i class="fa-solid fa-circle-check"></i></article>
+          <article><span class="language-symbol">EN</span><div><strong>English</strong><small>B2 · Upper-intermediate</small></div><i class="fa-solid fa-certificate"></i></article>
+          <article><span class="language-symbol">ES</span><div><strong>Spanish</strong><small>B2 · Upper-intermediate</small></div><i class="fa-solid fa-comments"></i></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-feature"><div class="container-fluid page-shell contact-feature-inner"><div><p>See the stack in action</p><h2>Explore the products and engineering work.</h2></div><div><a class="watch-button" href="experiencias.html"><i class="fa-solid fa-play"></i> View projects</a><a class="round-button" href="contacto.html" aria-label="Contact page"><i class="fa-regular fa-message"></i></a></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container-fluid page-shell footer-grid"><div><strong>Bernardo Silva</strong><p>Software Engineer &amp; Web Lead</p></div><div class="footer-links"><a href="experiencias.html">Projects</a><a href="competencias.html">Skills</a><a href="formacao.html">Education</a><a href="contacto.html">Contact</a></div><p>© <span id="currentYear"></span></p></div></footer>
+  <button id="backToTop" class="back-to-top" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/core.js"></script>
 </body>
 </html>
-
-

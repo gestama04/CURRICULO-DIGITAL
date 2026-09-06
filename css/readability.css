@@ -1,0 +1,128 @@
+/* =====================================================
+   BERNARDO SILVA PORTFOLIO - READABILITY.CSS
+   Global readability pass for all cinematic pages
+   Load this file AFTER the page-specific CSS.
+===================================================== */
+
+/* Global navigation and catalogue headings */
+.navbar-brand small { font-size: 0.68rem; }
+.portfolio-nav .nav-link { font-size: 0.9rem; }
+.portfolio-nav .nav-link i { font-size: 0.8rem; }
+.row-heading p { font-size: 0.75rem; }
+.row-heading > a { font-size: 0.82rem; }
+.site-footer p,
+.footer-links a { font-size: 0.8rem; }
+
+/* Shared cinematic hero details */
+.hero-label { font-size: 0.82rem; }
+.hero-meta,
+.hero-note,
+.hero-facts span,
+.hero-stack span,
+.availability { font-size: 0.78rem; }
+
+/* Homepage */
+.tile-content p { font-size: 0.84rem; line-height: 1.55; }
+.rank { font-size: 0.72rem; }
+.tile-buttons a { font-size: 0.76rem; }
+.profile-badge { font-size: 0.74rem; }
+.profile-copy p { font-size: 0.94rem; }
+.detail-button { font-size: 0.8rem; }
+.profile-categories strong { font-size: 0.86rem; }
+.profile-categories small { font-size: 0.72rem; }
+.landscape-card small { font-size: 0.7rem; }
+.skill-row strong { font-size: 0.84rem; }
+.skill-row small { font-size: 0.7rem; line-height: 1.45; }
+.cv-row small { font-size: 0.72rem; }
+.contact-feature p { font-size: 0.76rem; }
+
+/* Projects and Experience */
+.experience-hero .hero-content > p:not(.hero-label) { font-size: 1.05rem; line-height: 1.75; }
+.project-copy .status,
+.status { font-size: 0.72rem; }
+.project-copy p { font-size: 0.84rem; line-height: 1.55; }
+.project-copy li { font-size: 0.7rem; }
+.project-buttons a { font-size: 0.76rem; }
+.metrics span { font-size: 0.68rem; }
+.metrics strong { font-size: 0.82rem; }
+.period { font-size: 0.78rem; }
+.company-block small { font-size: 0.72rem; }
+.role-banner > p { font-size: 0.9rem; line-height: 1.65; }
+.role-row strong { font-size: 0.8rem; }
+.role-row small { font-size: 0.7rem; line-height: 1.4; }
+.site-grid small { font-size: 0.7rem; }
+.project-filter { font-size: 0.78rem; }
+.archive-card span { font-size: 0.7rem; }
+.archive-card h3 { font-size: 1.02rem; }
+.archive-card p { font-size: 0.8rem; line-height: 1.55; }
+.archive-card a { font-size: 0.76rem; }
+
+/* Skills */
+.skills-hero .hero-content > p:not(.hero-label) { font-size: 1.05rem; }
+.domain-label { font-size: 0.7rem; }
+.domain-content h3 { font-size: 1.42rem; }
+.domain-content > p:not(.domain-label) { font-size: 0.84rem; line-height: 1.6; }
+.domain-content li { font-size: 0.7rem; }
+.proof span { font-size: 0.72rem; }
+.proof strong { font-size: 0.78rem; }
+.evidence-row small { font-size: 0.68rem; }
+.evidence-row strong { font-size: 0.86rem; }
+.evidence-row em { font-size: 0.7rem; }
+.process-row p { font-size: 0.78rem; line-height: 1.55; }
+.foundation-grid h3 { font-size: 0.96rem; }
+.foundation-grid p { font-size: 0.78rem; line-height: 1.55; }
+.foundation-grid article > div span { font-size: 0.68rem; }
+.language-row strong { font-size: 0.88rem; }
+.language-row small { font-size: 0.72rem; }
+
+/* Education */
+.education-hero .hero-content > p:not(.hero-label) { font-size: 1.05rem; }
+.degree-visual > small { font-size: 0.74rem; }
+.institution { font-size: 0.74rem; line-height: 1.5; }
+.degree-content h3 { font-size: 1.85rem; }
+.degree-content > p:not(.institution) { font-size: 0.9rem; line-height: 1.65; }
+.learning-row strong { font-size: 0.82rem; }
+.learning-row small { font-size: 0.72rem; line-height: 1.45; }
+.degree-buttons a,
+.certificate-content > a,
+.prior-banner > a { font-size: 0.78rem; padding: 0.62rem 0.78rem; }
+.certificate-card { min-height: 285px; }
+.certificate-content { padding: 1.2rem; }
+.certificate-date { font-size: 0.7rem; }
+.certificate-content > small { font-size: 0.7rem; line-height: 1.4; }
+.certificate-content h3 { font-size: 1.05rem; line-height: 1.35; }
+.certificate-content p { font-size: 0.8rem; line-height: 1.55; }
+.applied-grid h3 { font-size: 0.94rem; line-height: 1.4; }
+.applied-grid p { font-size: 0.8rem; line-height: 1.55; }
+.prior-banner small { font-size: 0.7rem; }
+.prior-banner h3 { font-size: 1.15rem; }
+.prior-banner p { font-size: 0.8rem; line-height: 1.5; }
+
+/* Contact */
+.channel-card small { font-size: 0.72rem; }
+.channel-card strong { font-size: 1rem; }
+.channel-card em { font-size: 0.82rem; }
+.message-guide h3 { font-size: 1.2rem; }
+.message-guide li > span { font-size: 0.76rem; }
+.message-guide strong { font-size: 0.92rem; }
+.message-guide p { font-size: 0.82rem; line-height: 1.55; }
+.privacy-note p { font-size: 0.78rem; line-height: 1.5; }
+.form-label { font-size: 0.88rem; }
+.form-control { font-size: 0.95rem; }
+.field-meta { font-size: 0.74rem; }
+.send-button { font-size: 0.88rem; }
+.submit-row p { font-size: 0.76rem; line-height: 1.5; }
+.explore-grid strong { font-size: 0.9rem; }
+.explore-grid small { font-size: 0.74rem; line-height: 1.45; }
+
+/* Preserve compactness on small screens without returning to tiny text */
+@media (max-width: 575.98px) {
+  .navbar-brand small { font-size: 0.62rem; }
+  .portfolio-nav .nav-link { font-size: 0.86rem; }
+  .certificate-content h3 { font-size: 1rem; }
+  .certificate-content p,
+  .applied-grid p,
+  .domain-content > p:not(.domain-label),
+  .archive-card p,
+  .message-guide p { font-size: 0.78rem; }
+}
