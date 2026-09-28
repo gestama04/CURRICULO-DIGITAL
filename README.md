@@ -12,9 +12,9 @@ A modern, responsive digital portfolio presenting my professional experience, se
 
 ## About
 
-I am a Software Engineer and Web Lead specialising in React Native, React, TypeScript, cloud-backed applications, AI-assisted workflows, automated testing, production web platforms, and web infrastructure.
+I am a Software Engineer building production websites, mobile applications, authenticated backend workflows, and AI-assisted product features.
 
-The portfolio highlights practical work supported by published products, professional experience, tested software, and implemented integrations.
+My work includes two corporate websites designed and delivered end to end, multiple multilingual platforms maintained in production, a published Android application, and tested TypeScript software.
 
 ## Featured Work
 
@@ -49,18 +49,17 @@ A mobile inventory management application integrating Google Gemini for image-ba
 
 ### Software Engineer & Web Lead
 
-**EUC Inovacao Portugal | November 2025 to Present**
+**EUC Inovação Portugal | November 2025 to Present**
 
-- Development and maintenance of institutional web platforms
-- Responsive implementation and production quality control
-- Domain, DNS, hosting, SSL/HTTPS, and deployment management
-- React Native and TypeScript interface contributions
-- Backend data modelling and REST API integration
+- Independently designed, built, deployed, and maintained two corporate websites
+- Enhanced multilingual production platforms across responsiveness, accessibility, SEO, navigation, forms, and cross-browser behavior
+- Contributed Figma-based interfaces and selected backend tasks to a React Native and TypeScript healthcare application
+- Managed production releases, hosting, DNS, HTTPS, Apache configuration, cache purging, and technical troubleshooting
 
 ## Main Technical Areas
 
 - **Mobile & Frontend:** React Native, Expo, React, TypeScript, JavaScript, HTML5, CSS3, Bootstrap
-- **Backend & Data:** Node.js, Supabase, PostgreSQL, Firebase, REST APIs, Python, Flask
+- **Backend & Data:** Node.js, Supabase, PostgreSQL, Firebase, REST APIs
 - **AI Integration:** Google Gemini API, structured outputs, image recognition, data extraction
 - **Testing & Infrastructure:** Automated testing, Zod, npm Workspaces, Git, GitHub, Docker, DNS, SSL/HTTPS, hosting, deployments
 
