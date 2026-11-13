@@ -1,133 +1,134 @@
-# Bernardo Silva | Software Engineering Portfolio
+# Bernardo Silva | Software Engineer Portfolio
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-Live-1399FF?style=for-the-badge&logo=githubpages&logoColor=white)](https://gestama04.github.io/CURRICULO-DIGITAL/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Bernardo%20Silva-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/eng-bernardo-silva)
 [![GitHub](https://img.shields.io/badge/GitHub-gestama04-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/gestama04)
 
-A modern, responsive digital portfolio presenting my professional experience, selected software projects, technical skills, education, certifications, and contact information.
+> A responsive portfolio focused on software engineering, React Native, TypeScript, frontend development, and production delivery.
 
-## Live Portfolio
+## Overview
 
-**Website:** [gestama04.github.io/CURRICULO-DIGITAL](https://gestama04.github.io/CURRICULO-DIGITAL/)
+I am a Software Engineer based in Portugal, focused on React Native, TypeScript, and modern frontend development. My work combines mobile products, responsive web interfaces, authenticated backend workflows, AI-assisted features, testing, and production infrastructure.
 
-## About
+The portfolio presents:
 
-I am a junior React Native and frontend engineer building production websites and TypeScript mobile products.
+- Two corporate websites designed, built, deployed, and maintained independently
+- Six multilingual production platforms supported across European projects
+- VitaStreak, a published Android application available on Google Play
+- MindGuess, a tested TypeScript application with 75 automated tests
+- My Inventory, a final-year project awarded 17/20
+- Professional experience with deployments, DNS, HTTPS/SSL, Apache, cPanel, and cache/CDN operations
 
-My work includes two corporate websites designed and delivered end to end, this portfolio built independently, multiple multilingual platforms maintained in production, a published Android application, and tested TypeScript software.
+## Featured Projects
 
-## Featured Work
+### [VitaStreak](https://github.com/gestama04/VitaStreak)
 
-### VitaStreak
+Production Android application for supplement routine management, featuring secure authentication, flexible schedules, local notifications, bilingual localization, adherence tracking, AI-assisted label extraction, and a native home-screen widget.
 
-A published mobile application for supplement routine management, including secure authentication, flexible schedules, local notifications, adherence tracking, AI-assisted label recognition, and routine review.
+**Stack:** React Native, Expo, TypeScript, Supabase, PostgreSQL, Edge Functions, Row Level Security, Google Gemini API, Cloudinary, EAS, and Google Play Console.
 
-**Technologies:** React Native, Expo, TypeScript, Supabase, PostgreSQL, Edge Functions, Row Level Security, Google Gemini API, and Cloudinary.
+- [Google Play](https://play.google.com/store/apps/details?id=com.gestama.vitastreak&hl=en_US)
+- [Source repository](https://github.com/gestama04/VitaStreak)
 
-- [View on Google Play](https://play.google.com/store/apps/details?id=com.gestama.vitastreak&hl=en_US)
-- [View repository](https://github.com/gestama04/VitaStreak)
+### [MindGuess](https://github.com/gestama04/MindGuess)
 
-### MindGuess
+Modular React Native guessing game powered by a local deterministic probabilistic inference engine. It uses weighted probability updates, entropy, expected information gain, validated datasets, and reproducible seeded simulations.
 
-A modular mobile guessing game powered by a local probabilistic inference engine. The engine uses structured data, weighted probability updates, entropy, and information gain to select useful questions dynamically.
+**Stack:** React Native, Expo SDK 54, TypeScript, Node.js, Zod, and npm Workspaces.
 
-The current implementation includes seeded question variation, Zod validation, automated dataset simulations, and 75 automated tests.
+- 75 automated tests
+- 34/34 correct identifications across 34 validated candidates
+- 55 structured questions and an average of 6.97 questions per simulation
+- [Source repository](https://github.com/gestama04/MindGuess)
 
-**Technologies:** React Native, Expo SDK 54, TypeScript, Node.js, Zod, and npm Workspaces.
+### [My Inventory](https://github.com/gestama04/My-Inventory)
 
-- [View repository](https://github.com/gestama04/MindGuess)
+Final-year mobile inventory application using Firebase and Google Gemini for image-assisted product identification and structured field extraction.
 
-### AI-Powered Inventory
+**Stack:** React Native, Expo, TypeScript, Firebase Authentication, Cloud Firestore, Cloud Functions, Google Gemini API, Cloudinary, QR codes, and PDF/Excel/JSON workflows.
 
-A final-year mobile inventory application integrating Google Gemini for image-based product identification and structured data extraction. The project received 17/20 and became the technical starting point for VitaStreak's later product work.
-
-**Technologies:** React Native, Expo, TypeScript, Firebase, Google Gemini API, and Cloudinary.
-
-- [View repository](https://github.com/gestama04/My-Inventory)
+- Final grade: **17/20**
+- Over **99% field-level extraction accuracy** across recorded evaluation cases
+- Technical foundation for VitaStreak's AI workflow
+- [Source repository](https://github.com/gestama04/My-Inventory)
 
 ## Professional Experience
 
-### Software Engineer & Web Lead
+### Software Engineer
 
-**EUC Inovação Portugal | November 2025 to Present**
+**EUC Inovação Portugal · Remote · November 2025 – Present**
 
-- Independently designed, built, deployed, and maintained two corporate websites
-- Enhanced multilingual production platforms across responsiveness, accessibility, SEO, navigation, forms, and cross-browser behavior
-- Contributed Figma-based interfaces and selected backend tasks to a React Native and TypeScript healthcare application
-- Managed production releases, hosting, DNS, HTTPS, Apache configuration, cache purging, and technical troubleshooting
+- Designed, built, deployed, and maintained two corporate websites from scratch
+- Supported six multilingual production platforms across European projects
+- Contributed React Native and TypeScript interfaces, REST API integrations, and PostgreSQL-backed workflows
+- Managed releases and infrastructure across domains and subdomains, including DNS, HTTPS/SSL, Apache, cPanel, cache/CDN purging, and troubleshooting
 
-## Main Technical Areas
+## Technical Focus
 
-- **Mobile & Frontend:** React Native, Expo, React, TypeScript, JavaScript, HTML5, CSS3, Bootstrap
-- **Backend & Data:** Node.js, Supabase, PostgreSQL, Firebase, REST APIs
-- **AI Integration:** Google Gemini API, structured outputs, image recognition, data extraction
-- **Testing & Infrastructure:** Automated testing, Zod, npm Workspaces, Git, GitHub, Docker, DNS, SSL/HTTPS, hosting, deployments
+| Area | Technologies |
+| --- | --- |
+| Mobile & frontend | React Native, Expo, Expo Router, React, TypeScript, JavaScript, HTML5, CSS3, Bootstrap, responsive design, accessibility, Figma |
+| Backend, data & AI integrations | Node.js, REST APIs, Supabase, PostgreSQL, SQL, Row Level Security, Edge Functions, Firebase, Cloud Firestore, Cloud Functions, Google Gemini API, structured outputs, Zod, Cloudinary |
+| Testing, tooling & delivery | Automated Testing, Jest, Node.js Test Runner, npm Workspaces, Git, GitHub, Docker, CI/CD fundamentals, EAS, Google Play Console, Linux/Ubuntu |
+| Web operations | SEO, canonical metadata, hreflang, DNS, HTTPS/SSL, Apache, cPanel, hosting, deployments |
+
+## Certifications
+
+- **Cisco Networking Academy:** Junior Cybersecurity Analyst; Network Technician Career Path (2025)
+- **Recode & CDI Portugal:** Front-End Development — HTML, CSS, JS & Bootstrap; Web Servers — IIS, Apache & Nginx (2025)
+
+## CV Downloads
+
+| Language | ATS-friendly | Classic layout |
+| --- | --- | --- |
+| English | [Download PDF](assets/docs/CV_Bernardo_Silva_English_ATS.pdf) | [Download PDF](assets/docs/CV_Bernardo_Silva_English.pdf) |
+| Portuguese | [Download PDF](assets/docs/CV_Bernardo_Silva_Portuguese_ATS.pdf) | [Download PDF](assets/docs/CV_Bernardo_Silva_Portugu%C3%AAs.pdf) |
 
 ## Portfolio Structure
 
 ```text
 CURRICULO-DIGITAL/
-|-- index.html
-|-- experiencias.html
-|-- competencias.html
-|-- formacao.html
-|-- contacto.html
-|-- css/
-|   |-- core.css
-|   |-- home.css
-|   |-- experience.css
-|   |-- skills.css
-|   |-- education.css
-|   |-- contact.css
-|   `-- readability.css
-|-- js/
-|   |-- core.js
-|   |-- experience.js
-|   `-- contact.js
-|-- assets/
-|   |-- images/
-|   |-- docs/
-|   `-- favicon/
-|-- sitemap.xml
-`-- README.md
+├── index.html              # Homepage and project overview
+├── experiencias.html       # Experience and project details
+├── competencias.html       # Technical skills and evidence
+├── formacao.html           # Education and certifications
+├── contacto.html           # Contact form and contact details
+├── css/                    # Page-specific and shared styles
+├── js/                     # Navigation and interaction scripts
+├── assets/
+│   ├── docs/               # CVs and certificates
+│   ├── images/             # Project and profile assets
+│   └── favicon/            # Browser icons and manifest
+├── sitemap.xml
+└── README.md
 ```
 
 ## Features
 
-- Responsive cinematic interface
-- Light and dark themes
-- Accessible navigation and focus states
-- Project archive filtering
-- Direct links to published work and repositories
-- Downloadable CVs in Portuguese and English
-- Education and certification documents
+- Responsive cinematic interface with light and dark themes
+- Accessible navigation, focus states, and readability controls
+- Project archive and featured-project evidence
+- Direct links to published work, repositories, and CVs
 - Formspree contact form with validation and spam protection
-- SEO and Open Graph metadata
-- XML sitemap for the GitHub Pages deployment
+- SEO, Open Graph metadata, JSON-LD, and XML sitemap
+- GitHub Pages deployment with no build step
 
-## Running Locally
+## Run Locally
 
-No build process is required.
-
-1. Clone the repository:
+No package installation or build process is required.
 
 ```bash
 git clone https://github.com/gestama04/CURRICULO-DIGITAL.git
-```
-
-2. Open the project directory:
-
-```bash
 cd CURRICULO-DIGITAL
 ```
 
-3. Open `index.html` in a browser or use the Visual Studio Code Live Server extension.
+Open `index.html` directly in a browser, or use the Visual Studio Code Live Server extension.
 
 ## Deployment
 
-The website is deployed with GitHub Pages from the repository's main branch.
+The site is deployed to GitHub Pages from the repository's main branch.
 
-**Production URL:** [https://gestama04.github.io/CURRICULO-DIGITAL/](https://gestama04.github.io/CURRICULO-DIGITAL/)
+**Live website:** [gestama04.github.io/CURRICULO-DIGITAL](https://gestama04.github.io/CURRICULO-DIGITAL/)
 
 ## Contact
 
@@ -135,8 +136,6 @@ The website is deployed with GitHub Pages from the repository's main branch.
 - **LinkedIn:** [linkedin.com/in/eng-bernardo-silva](https://www.linkedin.com/in/eng-bernardo-silva)
 - **GitHub:** [github.com/gestama04](https://github.com/gestama04)
 
-## Author
+---
 
-**Bernardo Silva**  
-Software Engineer & Web Lead  
-React Native, TypeScript, Mobile & Web Products
+**Bernardo Silva** · Software Engineer · React Native · TypeScript · Frontend
