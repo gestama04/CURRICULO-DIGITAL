@@ -12,9 +12,9 @@ A modern, responsive digital portfolio presenting my professional experience, se
 
 ## About
 
-I am a Software Engineer building production websites, mobile applications, authenticated backend workflows, and AI-assisted product features.
+I am a junior React Native and frontend engineer building production websites and TypeScript mobile products.
 
-My work includes two corporate websites designed and delivered end to end, multiple multilingual platforms maintained in production, a published Android application, and tested TypeScript software.
+My work includes two corporate websites designed and delivered end to end, this portfolio built independently, multiple multilingual platforms maintained in production, a published Android application, and tested TypeScript software.
 
 ## Featured Work
 
@@ -39,7 +39,7 @@ The current implementation includes seeded question variation, Zod validation, a
 
 ### AI-Powered Inventory
 
-A mobile inventory management application integrating Google Gemini for image-based product identification and structured data extraction. The evaluated recognition workflow achieved over 99% accuracy in the project test set.
+A final-year mobile inventory application integrating Google Gemini for image-based product identification and structured data extraction. The project received 17/20 and became the technical starting point for VitaStreak's later product work.
 
 **Technologies:** React Native, Expo, TypeScript, Firebase, Google Gemini API, and Cloudinary.
 
